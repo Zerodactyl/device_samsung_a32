@@ -179,7 +179,8 @@ EVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
+    TetheringConfigOverlay \
+    WifiOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
