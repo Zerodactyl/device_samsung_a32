@@ -127,7 +127,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor
+    android.hardware.biometrics.fingerprint@2.3-service-samsung.a32 \
+    SamsungUdfpsHandler.a32
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
