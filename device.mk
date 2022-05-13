@@ -204,6 +204,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayA32 \
     SettingsProviderOverlayA32 \
     SystemUIOverlayA32 \
+    TelephonyOverlayA32 \
     TetheringConfigOverlayA32 \
     WifiOverlayA32
 
