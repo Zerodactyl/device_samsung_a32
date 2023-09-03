@@ -17,3 +17,5 @@ type sysfs_wifi, fs_type, sysfs_type;
 type biometrics_vendor_data_file, file_type, data_file_type;
 type snap_data_vendor_file, file_type, data_file_type;
 type pps_socket, file_type;
+type sysfs_mtk_cpufreq, fs_type, sysfs_type;
+type sysfs_mtk_gpufreq, fs_type, sysfs_type;
