@@ -6,3 +6,4 @@ type steady_block_device, dev_type;
 type drb_device, dev_type;
 type ap_device, dev_type;
 type fp_sensor_device, dev_type;
+type latency_device, dev_type;
