@@ -175,18 +175,19 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Overlays
-EVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
+DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay \
-    WifiOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayA32 \
+    SettingsOverlayA32 \
+    TetheringConfigOverlayA32 \
+    WifiOverlayA32
 
 # Power
 PRODUCT_PACKAGES += \
