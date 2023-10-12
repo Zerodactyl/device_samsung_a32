@@ -199,6 +199,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayA32 \
     FrameworksResOverlayA32 \
     SettingsOverlayA32 \
     SettingsProviderOverlayA32 \
