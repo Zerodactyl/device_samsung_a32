@@ -110,6 +110,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 	persist.log.tag.NetLnkEventHdlr=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.NetworkPolicy=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.NetworkStats=$(VENDOR_LOG_LEVEL) \
+	persist.log.tag.OpenGLRenderer=S \
 	persist.log.tag.OperatorUtils=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.PKM-Lib=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.PKM-MDM=$(VENDOR_LOG_LEVEL) \
