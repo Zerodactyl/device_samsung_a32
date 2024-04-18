@@ -22,11 +22,11 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := RM6785
+TARGET_BOOTLOADER_BOARD_NAME := a32
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6785
+TARGET_BOARD_PLATFORM := mt6768
 
 # Inherit the proprietary files
 include vendor/samsung/a32/BoardConfigVendor.mk
