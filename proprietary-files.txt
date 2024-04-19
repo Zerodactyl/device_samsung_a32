@@ -1451,7 +1451,6 @@ vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
 vendor/etc/nfc/sec_s3nrn4v_swreg.bin
 vendor/etc/permissions/com.nxp.mifare.xml
 -vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
-vendor/etc/libnfc-sec-vendor.conf
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libnxpsmartpaparser.so
 vendor/lib64/libnxp_extamp_intf.so
