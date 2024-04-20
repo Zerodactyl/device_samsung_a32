@@ -6,3 +6,6 @@ genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/input/input7/enabled
 
 # Sensors
 genfscon sysfs /devices/virtual/sensors/flip_cover_detector_sensor/nfc_cover_status     u:object_r:sysfs_ski_sensor_writable:s0
+
+# Thermal
+genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature                       u:object_r:sysfs_ss_writable:s0
