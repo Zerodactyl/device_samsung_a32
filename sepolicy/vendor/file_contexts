@@ -8,6 +8,9 @@
 # HDCP
 /vendor/bin/vendor\.samsung\.hardware\.security\.hdcp\.wifidisplay-service                  u:object_r:hal_hdcp_default_exec:s0
 
+# Light
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.a32                        u:object_r:hal_light_default_exec:s0
+
 # Partitions
 /dev/block/mmcblk0p1                                                u:object_r:efsblk_device:s0
 /dev/block/platform/.+/by-name/(efs|EFS)?                           u:object_r:efsblk_device:s0
