@@ -1,0 +1,1 @@
+type sysfs_ski_sensor_writable, fs_type, sysfs_type;

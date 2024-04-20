@@ -1,0 +1,2 @@
+# Sensors
+genfscon sysfs /devices/virtual/sensors/flip_cover_detector_sensor/nfc_cover_status     u:object_r:sysfs_ski_sensor_writable:s0

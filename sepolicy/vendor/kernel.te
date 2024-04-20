@@ -1,0 +1,1 @@
+allow kernel sysfs_ski_sensor_writable:file r_file_perms;
