@@ -15,6 +15,9 @@
 /dev/block/mmcblk0p1                                                u:object_r:efsblk_device:s0
 /dev/block/platform/.+/by-name/(efs|EFS)?                           u:object_r:efsblk_device:s0
 
+# Power
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@2\.0-service            u:object_r:hal_power_default_exec:s0
+
 # Proca
 /(vendor|system/vendor)/bin/vendor\.samsung\.hardware\.security\.proca@2\.0-service         u:object_r:hal_proca_default_exec:s0
 

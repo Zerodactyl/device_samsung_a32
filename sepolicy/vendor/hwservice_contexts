@@ -1,5 +1,8 @@
 # Engmode
 vendor.samsung.hardware.security.engmode::ISehEngmode               u:object_r:hal_engmode_hwservice:s0
 
+# Power
+vendor.samsung.hardware.miscpower::ISehMiscPower                    u:object_r:hal_miscpower_hwservice:s0
+
 # Vaultkeeper
 vendor.samsung.hardware.security.vaultkeeper::ISehVaultKeeper       u:object_r:hal_vaultkeeper_server_hwservice:s0
