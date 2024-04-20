@@ -1,2 +1,5 @@
 set_prop(vendor_init, vendor_mtk_camera_prop)
 set_prop(vendor_init, vendor_mtk_c2_log_prop)
+
+allow vendor_init cgroup:dir create_dir_perms;
+allow vendor_init cgroup:file w_file_perms;
