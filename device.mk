@@ -107,6 +107,7 @@ PRODUCT_PACKAGES += \
     libdrm.vendor\
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     libz_stable.vendor
 
@@ -185,6 +186,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
+# NDK
+PRODUCT_PACKAGES += \
+    android.hardware.common-V2-ndk_platform.vendor \
+    android.hardware.power-V2-ndk_platform.vendor \
+    android.hardware.vibrator-V2-ndk_platform.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
