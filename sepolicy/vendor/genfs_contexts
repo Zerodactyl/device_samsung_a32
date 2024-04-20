@@ -12,5 +12,9 @@ genfscon sysfs /devices/virtual/sensors/grip_sensor                             
 # Thermal
 genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature                       u:object_r:sysfs_ss_writable:s0
 
+# Wakeup nodes
+genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/rtc/rtc0/wakeup  u:object_r:sysfs_wakeup:s0
+
 # Wi-Fi
 genfscon sysfs /wifi/memdump                                                            u:object_r:sysfs_wifi_memdump:s0
