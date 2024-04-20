@@ -1,0 +1,3 @@
+# Partitions
+/dev/block/mmcblk0p1                                                u:object_r:efsblk_device:s0
+/dev/block/platform/.+/by-name/(efs|EFS)?                           u:object_r:efsblk_device:s0
