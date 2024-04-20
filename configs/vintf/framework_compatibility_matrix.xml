@@ -473,30 +473,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.wifi.hostapd</name>
-        <version>4.0</version>
-        <interface>
-            <name>ISehHostapd</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.wifi.supplicant</name>
-        <version>3.0-1</version>
-        <interface>
-            <name>ISehSupplicant</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.wifi</name>
-        <version>2.0-3</version>
-        <interface>
-            <name>ISehWifi</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.drm</name>
         <version>1.0-4</version>
         <interface>

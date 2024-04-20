@@ -1686,21 +1686,10 @@ vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 
 # WiFi (samsung)
-vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/vendor.samsung.hardware.security.hdcp.wifidisplay-service
 vendor/etc/init/vendor.samsung.hardware.security.hdcp.wifidisplay-default.rc
-vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.security.hdcp.wifidisplay-default.xml
--vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
--vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 vendor/lib64/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk_platform.so
-vendor/lib64/vendor.samsung.hardware.wifi.hostapd@4.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.1.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.1.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.2.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.3.so
 
 # Misc
 system_ext/lib/libaed.so

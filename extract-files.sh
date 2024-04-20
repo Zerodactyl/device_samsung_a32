@@ -62,7 +62,7 @@ function blob_fixup {
             "$PATCHELF" --replace-needed libhidlbase.so libhidlbase-v31.so "${2}"
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
-        vendor/bin/hw/android.hardware.wifi@1.0-service-lazy | vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service)
+        vendor/bin/hw/android.hardware.wifi@1.0-service-lazy)
             "$PATCHELF" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
             ;;
         vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64)
