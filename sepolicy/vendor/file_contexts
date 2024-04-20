@@ -27,6 +27,9 @@
 # RIL
 /vendor/bin/secril_config_svc                                       u:object_r:vendor_secril_config_svc_exec:s0
 
+# Sensors
+/dev/shub_data_injection                                            u:object_r:shub_device:s0
+
 # TEE
 /dev/tzdev                                                          u:object_r:tz_user_device:s0
 /dev/tziwsock                                                       u:object_r:tz_user_device:s0

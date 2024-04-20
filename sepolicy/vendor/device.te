@@ -1,2 +1,3 @@
 type efsblk_device, dev_type;
 type tz_user_device, dev_type, mlstrustedobject;
+type shub_device, dev_type;
