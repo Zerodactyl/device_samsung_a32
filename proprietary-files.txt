@@ -1303,7 +1303,6 @@ vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/bootperf.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
--vendor/etc/vintf/manifest/power-default.xml:vendor/etc/vintf/manifest/power-default-mtk.xml
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libperfctl_vendor.so
@@ -1493,7 +1492,6 @@ vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
--vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml:vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal-mtk.xml
 vendor/lib/librgbwlightsensor.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/sensors.grip.so
