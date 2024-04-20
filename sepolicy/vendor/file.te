@@ -3,3 +3,4 @@ type sysfs_ski_touch_writable, fs_type, sysfs_type;
 type sysfs_ss_writable, fs_type, sysfs_type;
 type sysfs_sensor_writable, fs_type, sysfs_type;
 type sysfs_wifi_memdump, fs_type, sysfs_type;
+type vendor_radio_data_file, file_type, data_file_type;

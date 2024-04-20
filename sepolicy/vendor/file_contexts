@@ -44,6 +44,8 @@
 
 # RIL
 /vendor/bin/secril_config_svc                                       u:object_r:vendor_secril_config_svc_exec:s0
+/data/vendor/secradio(/.*)?                                         u:object_r:vendor_radio_data_file:s0
+/dev/umts_*                                                         u:object_r:radio_device:s0
 
 # Sensors
 /dev/shub_data_injection                                            u:object_r:shub_device:s0
