@@ -1,3 +1,6 @@
+# Camera
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.camera\.provider@4\.[0-9]-service_64      u:object_r:hal_camera_default_exec:s0
+
 # Cass
 /vendor/bin/cass                                                    u:object_r:cassd_exec:s0
 
