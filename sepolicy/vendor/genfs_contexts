@@ -1,2 +1,5 @@
+# Battery
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply       u:object_r:sysfs_battery:s0
+
 # Sensors
 genfscon sysfs /devices/virtual/sensors/flip_cover_detector_sensor/nfc_cover_status     u:object_r:sysfs_ski_sensor_writable:s0
