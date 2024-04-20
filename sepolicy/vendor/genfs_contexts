@@ -11,3 +11,6 @@ genfscon sysfs /devices/virtual/sensors/grip_sensor                             
 
 # Thermal
 genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature                       u:object_r:sysfs_ss_writable:s0
+
+# Wi-Fi
+genfscon sysfs /wifi/memdump                                                            u:object_r:sysfs_wifi_memdump:s0

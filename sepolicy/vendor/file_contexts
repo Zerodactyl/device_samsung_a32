@@ -17,6 +17,9 @@
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.a32                        u:object_r:hal_light_default_exec:s0
 
+# macloader
+/(vendor|system/vendor)/bin/hw/macloader                                                    u:object_r:macloader_exec:s0
+
 # Media
 /(vendor|system/vendor)/bin/hw/samsung\.software\.media\.c2@1\.0-service                    u:object_r:mediacodec_exec:s0
 
