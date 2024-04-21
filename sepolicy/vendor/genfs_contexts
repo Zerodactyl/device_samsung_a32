@@ -17,6 +17,7 @@ genfscon sysfs /kernel/mm/vmscan/am_app_launch                                  
 # Power
 genfscon sysfs /power/cpufreq_min_limit                                                 u:object_r:sysfs_power:s0
 genfscon sysfs /power/cpufreq_max_limit                                                 u:object_r:sysfs_power:s0
+genfscon sysfs /power/cpufreq_table                                                     u:object_r:sysfs_power:s0
 genfscon proc  /sys/vm/kswapd_perftune_cpumask                                          u:object_r:proc_kswapd_perftune_cpumask:s0
 
 # Sensors
