@@ -6,3 +6,6 @@ ro.mtk_cam_stereo_camera_support      u:object_r:vendor_mtk_camera_prop:s0
 
 # Key
 ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0
+
+# Wi-Fi
+vendor.wifi.dualconcurrent.interface    u:object_r:wifi_log_prop:s0

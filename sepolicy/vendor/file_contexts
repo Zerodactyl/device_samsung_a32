@@ -72,3 +72,7 @@
 
 # Vibrator
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.vibrator-service      u:object_r:hal_vibrator_default_exec:s0
+
+# Wi-Fi
+/data/vendor/conn(/.*)?                                                         u:object_r:vendor_convergence_data_file:s0
+/mnt/vendor/efs/wifi(/.*)?                                                      u:object_r:wifi_efs_file:s0
