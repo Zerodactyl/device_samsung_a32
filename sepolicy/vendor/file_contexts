@@ -35,6 +35,10 @@
 # Media
 /(vendor|system/vendor)/bin/hw/samsung\.software\.media\.c2@1\.0-service                    u:object_r:mediacodec_exec:s0
 
+# NFC
+/dev/sec-nfc                                                                                u:object_r:nfc_device:s0
+/(vendor|system/vendor)/bin/hw/sec\.android\.hardware\.nfc@1\.2-service                     u:object_r:hal_nfc_default_exec:s0
+
 # Partitions
 /dev/block/mmcblk0p1                                                u:object_r:efsblk_device:s0
 /dev/block/platform/.+/by-name/(efs|EFS)?                           u:object_r:efsblk_device:s0
