@@ -168,9 +168,9 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
 
-# Lights
+# Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.a32
+    android.hardware.light@2.0.vendor:64
 
 # Media
 PRODUCT_PACKAGES += \
@@ -192,6 +192,7 @@ PRODUCT_COPY_FILES += \
 # NDK
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor \
+    android.hardware.light-V1-ndk_platform.vendor \
     android.hardware.power-V2-ndk_platform.vendor \
     android.hardware.vibrator-V2-ndk_platform.vendor
 
