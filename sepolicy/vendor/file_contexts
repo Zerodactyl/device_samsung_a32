@@ -58,6 +58,9 @@
 /dev/shub_data_injection                                            u:object_r:shub_device:s0
 /dev/shub_sensorhub                                                 u:object_r:shub_device:s0
 
+# Snap
+/(vendor|system/vendor)/bin/snap_utility_64					u:object_r:snap_utility_exec:s0
+
 # TEE
 /dev/tzdev                                                          u:object_r:tz_user_device:s0
 /dev/tziwsock                                                       u:object_r:tz_user_device:s0
