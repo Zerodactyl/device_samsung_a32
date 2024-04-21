@@ -24,6 +24,7 @@ genfscon sysfs /devices/virtual/sensors/grip_sensor                             
 
 # Thermal
 genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature                       u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/sec/sec-pa-thermistor/temperature                       u:object_r:sysfs_ss_writable:s0
 
 # Wakeup nodes
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup                                      u:object_r:sysfs_wakeup:s0
