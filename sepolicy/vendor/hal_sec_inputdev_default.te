@@ -1,0 +1,4 @@
+type hal_sec_inputdev_default, domain, halserverdomain;
+type hal_sec_inputdev_default_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hal_sec_inputdev_default)

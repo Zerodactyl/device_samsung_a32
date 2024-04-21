@@ -26,6 +26,9 @@
 # Hyper
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.hyper-service                     u:object_r:hal_hyper_default_exec:s0
 
+# Input
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.sysinput@[1-9]\.[0-9]-service     u:object_r:hal_sec_inputdev_default_exec:s0
+
 # io
 /dev/batch_io                                                                               u:object_r:io_device:s0
 
