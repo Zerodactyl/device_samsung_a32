@@ -6,6 +6,14 @@ genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0049/sm5714-fuelgauge/pow
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/input/input7/enabled        u:object_r:sysfs_ski_touch_writable:s0
 genfscon sysfs /devices/virtual/sec/tsp/cmd                                             u:object_r:sysfs_sec:s0
 
+# Memory
+genfscon sysfs /kernel/mm/vmscan/am_app_launch                                          u:object_r:sysfs_ski_memory_writable:s0
+
+# Power
+genfscon sysfs /power/cpufreq_min_limit                                                 u:object_r:sysfs_power:s0
+genfscon sysfs /power/cpufreq_max_limit                                                 u:object_r:sysfs_power:s0
+genfscon proc  /sys/vm/kswapd_perftune_cpumask                                          u:object_r:proc_kswapd_perftune_cpumask:s0
+
 # Sensors
 genfscon sysfs /devices/virtual/sensors/flip_cover_detector_sensor/nfc_cover_status     u:object_r:sysfs_ski_sensor_writable:s0
 genfscon sysfs /devices/virtual/sensors/ssp_sensor/enable                               u:object_r:sysfs_ski_sensor_writable:s0
