@@ -8,3 +8,5 @@ allow hal_hyper_default sysfs_power:file rw_file_perms;
 allow hal_hyper_default proc_kswapd_perftune_cpumask:file rw_file_perms;
 allow hal_hyper_default sysfs_ski_memory_writable:dir r_dir_perms;
 allow hal_hyper_default sysfs_ski_memory_writable:file rw_file_perms;
+
+get_prop(hal_hyper_default, product_ship_prop)

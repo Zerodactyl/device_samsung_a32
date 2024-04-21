@@ -12,3 +12,5 @@ allow rild cassd:dir search;
 allow rild cassd:file { read getattr open };
 
 allow rild hal_telephony_hwservice:hwservice_manager { add find };
+
+get_prop(rild, product_ship_prop)

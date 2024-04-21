@@ -55,6 +55,7 @@ ro.config.per_app_memcg=false
 # Misc
 ro.vendor.mtk_omacp_support=1
 persist.vendor.mdlog.flush_log_ratio=0
+ro.product_ship=true
 
 # OEM Unlock
 ro.oem_unlock_supported=1
