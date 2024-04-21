@@ -2,3 +2,8 @@ type vaultkeeperd, domain;
 type vaultkeeperd_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(vaultkeeperd)
+
+allow vaultkeeperd steady_block_device:blk_file rw_file_perms;
+allow vaultkeeperd tz_user_device:chr_file rw_file_perms;
+
+set_prop(vaultkeeperd, vendor_sec_vaultkeeper_prop)
