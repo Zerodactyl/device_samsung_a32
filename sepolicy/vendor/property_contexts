@@ -15,6 +15,7 @@ vendor.thermal.amb.                     u:object_r:vendor_thermal_test_prop:s0
 
 # TZ
 vendor.tzdaemon                         u:object_r:vendor_tzdaemon_prop:s0
+vendor.tzts_daemon                      u:object_r:vendor_tztsdaemon_prop:s0
 
 # Vaultkeeper
 ro.vendor.security.vaultkeeper.         u:object_r:vendor_sec_vaultkeeper_prop:s0
