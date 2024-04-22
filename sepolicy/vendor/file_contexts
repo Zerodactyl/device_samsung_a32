@@ -4,6 +4,10 @@
 # Cass
 /vendor/bin/cass                                                    u:object_r:cassd_exec:s0
 
+# cgroup
+/dev/cpuset(/.*)?                                                   u:object_r:cgroup:s0
+/dev/stune(/.*)?                                                    u:object_r:cgroup:s0
+
 # drb
 /dev/drb                                                            u:object_r:drb_device:s0
 

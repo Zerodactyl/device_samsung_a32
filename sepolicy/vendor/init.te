@@ -1,0 +1,1 @@
+allow init lk_block_device:lnk_file relabelto;

@@ -10,6 +10,9 @@ vendor.npu.usr_drv.log_mask             u:object_r:vendor_sec_camera_prop:s0
 # Key
 ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0
 
+# SMPS
+ro.smps.enable                          u:object_r:build_prop:s0
+
 # Thermal
 vendor.thermal.amb.                     u:object_r:vendor_thermal_test_prop:s0
 
