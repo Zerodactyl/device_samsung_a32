@@ -10,6 +10,9 @@
 # dsmsca
 /vendor/bin/dsmsca                                                  u:object_r:dsmsca_exec:s0
 
+# EFS
+/mnt/vendor/efs/taas(/.*)?                                          u:object_r:taas_efs_file:s0
+
 # Engmode
 /(vendor|system/vendor)/bin/emservice                                                       u:object_r:emservice_exec:s0
 /(vendor|system/vendor)/bin/vendor\.samsung\.hardware\.security\.engmode@1\.0-service       u:object_r:hal_engmode_default_exec:s0
