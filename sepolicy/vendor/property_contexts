@@ -13,6 +13,9 @@ ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0
 # Thermal
 vendor.thermal.amb.                     u:object_r:vendor_thermal_test_prop:s0
 
+# TZ
+vendor.tzdaemon                         u:object_r:vendor_tzdaemon_prop:s0
+
 # Vaultkeeper
 ro.vendor.security.vaultkeeper.         u:object_r:vendor_sec_vaultkeeper_prop:s0
 vendor.security.vaultkeeper.            u:object_r:vendor_sec_vaultkeeper_prop:s0
