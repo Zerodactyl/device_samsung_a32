@@ -16,6 +16,10 @@ genfscon sysfs /devices/platform/shub/iio:device22                              
 # Input
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/input/input7/enabled        u:object_r:sysfs_ski_touch_writable:s0
 genfscon sysfs /devices/virtual/sec/tsp/cmd                                             u:object_r:sysfs_sec:s0
+genfscon sysfs /devices/virtual/input/input3/name                                       u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input10/name                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input11/name                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input12/name                                      u:object_r:sysfs_ss_writable:s0
 
 # Memory
 genfscon sysfs /kernel/mm/vmscan/am_app_launch                                          u:object_r:sysfs_ski_memory_writable:s0
