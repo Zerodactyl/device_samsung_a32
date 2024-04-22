@@ -4,3 +4,7 @@ cam.dipsavefile.enable                  u:object_r:sec_camera_prop:s0
 
 # Product
 ro.product_ship                         u:object_r:product_ship_prop:s0
+
+# Radio
+ro.multisim.                            u:object_r:radio_prop:s0
+persist.ril.                            u:object_r:radio_prop:s0
