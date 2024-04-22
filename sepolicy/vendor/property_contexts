@@ -12,8 +12,8 @@ ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0
 
 # Radio
 ro.vendor.multisim.                     u:object_r:vendor_radio_prop:s0
-ro.vendor.radio.default_network         u:object_r:vendor_radio_prop:s0
-ro.vendor.radio.default_network_by      u:object_r:vendor_radio_prop:s0
+ro.multisim.                            u:object_r:vendor_radio_prop:s0
+ro.vendor.radio.                        u:object_r:vendor_radio_prop:s0
 
 # SMPS
 ro.smps.enable                          u:object_r:vendor_exported_system_prop:s0
