@@ -49,6 +49,8 @@ genfscon proc  /sys/vm/dirty_background_bytes                                   
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/rtc/rtc0/wakeup  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/wireless/wakeup   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:hall_ic/wakeup                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/ac/wakeup         u:object_r:sysfs_wakeup:s0
 
 # Wi-Fi
 genfscon sysfs /wifi/memdump                                                            u:object_r:sysfs_wifi_memdump:s0
