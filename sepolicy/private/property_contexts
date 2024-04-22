@@ -4,6 +4,7 @@ ro.vendor.qti.va_aosp.support           u:object_r:vendor_exported_system_prop:s
 # Camera
 persist.sns.camera_light                u:object_r:sns_camera_light_prop:s0
 cam.dipsavefile.enable                  u:object_r:sec_camera_prop:s0
+sec.camera.portrait_mode                u:object_r:sec_camera_portrait_prop:s0
 
 # Product
 ro.product_ship                         u:object_r:product_ship_prop:s0
