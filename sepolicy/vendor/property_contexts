@@ -16,7 +16,7 @@ ro.vendor.radio.default_network         u:object_r:vendor_radio_prop:s0
 ro.vendor.radio.default_network_by      u:object_r:vendor_radio_prop:s0
 
 # SMPS
-ro.smps.enable                          u:object_r:build_prop:s0
+ro.smps.enable                          u:object_r:vendor_exported_system_prop:s0
 
 # Thermal
 vendor.thermal.amb.                     u:object_r:vendor_thermal_test_prop:s0

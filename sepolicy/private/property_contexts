@@ -11,3 +11,6 @@ ro.product_ship                         u:object_r:product_ship_prop:s0
 # Radio
 ro.multisim.                            u:object_r:radio_prop:s0
 persist.ril.                            u:object_r:radio_prop:s0
+
+# Security
+ro.security.                            u:object_r:exported_system_prop:s0

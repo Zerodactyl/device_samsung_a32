@@ -5,7 +5,7 @@
 /vendor/bin/cass                                                    u:object_r:cassd_exec:s0
 
 # cgroup
-/dev/cpuset(/.*)?                                                   u:object_r:cgroup:s0
+/dev/cpuset(/.*)?                                                   u:object_r:ap_device:s0
 /dev/stune(/.*)?                                                    u:object_r:cgroup:s0
 
 # drb

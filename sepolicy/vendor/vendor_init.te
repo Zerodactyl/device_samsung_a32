@@ -3,6 +3,9 @@ set_prop(vendor_init, vendor_mtk_c2_log_prop)
 set_prop(vendor_init, vendor_mtk_default_prop)
 get_prop(vendor_init, vts_status_prop)
 get_prop(vendor_init, vendor_radio_prop)
+set_prop(vendor_init, vendor_exported_system_prop)
 
 allow vendor_init cgroup:dir create_dir_perms;
 allow vendor_init cgroup:file w_file_perms;
+allow vendor_init ap_device:dir create_dir_perms;
+allow vendor_init ap_device:file { mounton create_file_perms };
