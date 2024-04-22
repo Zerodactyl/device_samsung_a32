@@ -11,3 +11,4 @@ allow tzdaemon init:unix_stream_socket connectto;
 
 get_prop(tzdaemon, product_ship_prop)
 set_prop(tzdaemon, vendor_tzdaemon_prop)
+set_prop(tzdaemon, vendor_secureos_prop)

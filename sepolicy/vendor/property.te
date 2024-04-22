@@ -4,3 +4,4 @@ type vendor_thermal_test_prop, property_type, vendor_property_type, vendor_publi
 type vendor_tzdaemon_prop, property_type, vendor_property_type, vendor_public_property_type, mtk_core_property_type;
 type vendor_tztsdaemon_prop, property_type, vendor_property_type, vendor_public_property_type;
 type vendor_radio_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_secureos_prop, property_type, vendor_property_type, vendor_public_property_type;
