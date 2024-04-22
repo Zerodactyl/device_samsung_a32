@@ -42,3 +42,4 @@ genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635
 
 # Wi-Fi
 genfscon sysfs /wifi/memdump                                                            u:object_r:sysfs_wifi_memdump:s0
+genfscon sysfs /wifi                                                                    u:object_r:sysfs_wifi:s0

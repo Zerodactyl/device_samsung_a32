@@ -11,6 +11,8 @@ allow macloader wifi_efs_file:dir create_dir_perms;
 allow macloader wifi_efs_file:file create_file_perms;
 allow macloader property_socket:sock_file write;
 allow macloader init:unix_stream_socket connectto;
+allow macloader sysfs_wifi:dir search;
+allow macloader sysfs_wifi:file rw_file_perms;
 
 set_prop(macloader, vendor_mtk_wifi_hotspot_prop)
 set_prop(macloader, wifi_log_prop)
