@@ -6,6 +6,12 @@ persist.sns.camera_light                u:object_r:sns_camera_light_prop:s0
 cam.dipsavefile.enable                  u:object_r:sec_camera_prop:s0
 sec.camera.portrait_mode                u:object_r:sec_camera_portrait_prop:s0
 
+# Cache
+persist.cache_integrity_32              u:object_r:cache_status_prop:s0
+persist.cache_integrity_64              u:object_r:cache_status_prop:s0
+persist.cache_status_32                 u:object_r:cache_status_prop:s0
+persist.cache_status_64                 u:object_r:cache_status_prop:s0
+
 # Product
 ro.product_ship                         u:object_r:product_ship_prop:s0
 
@@ -14,3 +20,6 @@ persist.ril.                            u:object_r:radio_prop:s0
 
 # Security
 ro.security.                            u:object_r:exported_system_prop:s0
+
+# Snap
+persist.debug_snap_gpu                  u:object_r:vendor_debug_snap_prop:s0

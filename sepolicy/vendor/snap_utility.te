@@ -2,3 +2,8 @@ type snap_utility, domain, halclientdomain, hal_allocator_client;
 type snap_utility_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(snap_utility)
+
+set_prop(snap_utility, cache_status_prop)
+get_prop(snap_utility, system_boot_reason_prop)
+get_prop(snap_utility, vendor_debug_snap_prop)
+set_prop(snap_utility, vendor_snap_cache_prop)
