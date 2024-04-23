@@ -16,3 +16,4 @@ type vaultkeeper_socket, file_type;
 type taas_efs_file, file_type, efs_type;
 type sysfs_wifi, fs_type, sysfs_type;
 type biometrics_vendor_data_file, file_type, data_file_type;
+type snap_data_vendor_file, file_type, data_file_type;

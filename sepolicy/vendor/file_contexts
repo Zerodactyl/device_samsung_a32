@@ -33,6 +33,9 @@
 # GPS
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@2\.0-service                 u:object_r:hal_gnss_default_exec:s0
 
+# GPU
+/dev/mali[0-9]                                                                              u:object_r:gpu_device:s0
+
 # HDCP
 /vendor/bin/vendor\.samsung\.hardware\.security\.hdcp\.wifidisplay-service                  u:object_r:hal_hdcp_default_exec:s0
 
@@ -83,7 +86,8 @@
 /dev/shub_sensorhub                                                 u:object_r:shub_device:s0
 
 # Snap
-/(vendor|system/vendor)/bin/snap_utility_64					u:object_r:snap_utility_exec:s0
+/(vendor|system/vendor)/bin/snap_utility_64					        u:object_r:snap_utility_exec:s0
+/data/vendor/snap(/.*)?                                             u:object_r:snap_data_vendor_file:s0
 
 # TEE
 /dev/tzdev                                                          u:object_r:tz_user_device:s0
