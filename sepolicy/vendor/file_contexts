@@ -11,6 +11,9 @@
 # drb
 /dev/drb                                                            u:object_r:drb_device:s0
 
+# drk
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.security\.drk@2\.0-service		u:object_r:hal_drk_default_exec:s0
+
 # dsmsca
 /vendor/bin/dsmsca                                                  u:object_r:dsmsca_exec:s0
 
