@@ -12,3 +12,4 @@ dontaudit vendor_secril_config_svc radio_prop:property_service set;
 dontaudit vendor_secril_config_svc radio_control_prop:property_service set;
 
 set_prop(vendor_secril_config_svc, vendor_radio_prop)
+get_prop(vendor_secril_config_svc, csc_prop)

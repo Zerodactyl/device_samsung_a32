@@ -12,6 +12,18 @@ persist.cache_integrity_64              u:object_r:cache_status_prop:s0
 persist.cache_status_32                 u:object_r:cache_status_prop:s0
 persist.cache_status_64                 u:object_r:cache_status_prop:s0
 
+# CSC
+mdc.                                    u:object_r:csc_prop:s0
+ro.csc.countryiso_code                  u:object_r:csc_prop:s0
+ro.csc.sales_code                       u:object_r:csc_prop:s0
+ro.csc.omcnw_code                       u:object_r:csc_prop:s0
+ro.csc.omcnw_code2                      u:object_r:csc_prop:s0
+ril.official_cscver                     u:object_r:csc_prop:s0
+persist.sys.omc_etcpath                 u:object_r:csc_prop:s0
+persist.sys.omc_support                 u:object_r:csc_prop:s0
+ro.simbased.changetype                  u:object_r:csc_prop:s0
+ro.csc.country_code                     u:object_r:csc_prop:s0
+
 # Product
 ro.product_ship                         u:object_r:product_ship_prop:s0
 
