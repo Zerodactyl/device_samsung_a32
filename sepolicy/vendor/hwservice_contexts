@@ -4,6 +4,9 @@ vendor.samsung.hardware.camera.provider::ISehCameraProvider		    u:object_r:hal_
 # Engmode
 vendor.samsung.hardware.security.engmode::ISehEngmode               u:object_r:hal_engmode_hwservice:s0
 
+# GNSS
+vendor.samsung.hardware.gnss::ISehGnss                              u:object_r:hal_gnss_hwservice:s0
+
 # Input
 vendor.samsung.hardware.sysinput::ISehSysInputDev                   u:object_r:hal_sec_inputdev_hwservice:s0
 vendor.samsung.hardware.secinputdev::ISehInputDevice                u:object_r:hal_sec_inputdev_hwservice:s0
