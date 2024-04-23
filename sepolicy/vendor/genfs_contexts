@@ -45,6 +45,7 @@ genfscon sysfs /devices/virtual/sec/sec-pa-thermistor/temperature               
 
 # VM
 genfscon proc  /sys/vm/dirty_background_bytes                                           u:object_r:proc_dirty:s0
+genfscon proc  /sys/vm/dirty_bytes                                                      u:object_r:proc_dirty:s0
 
 # Wakeup nodes
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/wakeup                                      u:object_r:sysfs_wakeup:s0
