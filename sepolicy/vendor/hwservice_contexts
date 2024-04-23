@@ -11,6 +11,9 @@ vendor.samsung.hardware.security.drk@2.0-service                    u:object_r:h
 # Engmode
 vendor.samsung.hardware.security.engmode::ISehEngmode               u:object_r:hal_engmode_hwservice:s0
 
+# Fingerprint
+vendor.samsung.hardware.biometrics.fingerprint::ISehBiometricsFingerprint       u:object_r:hal_fingerprint_hwservice:s0
+
 # GNSS
 vendor.samsung.hardware.gnss::ISehGnss                              u:object_r:hal_gnss_hwservice:s0
 
