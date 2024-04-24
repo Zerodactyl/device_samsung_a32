@@ -1,1 +1,2 @@
 get_prop(cameraserver, vendor_sec_camera_prop)
+get_prop(cameraserver, sec_camera_prop)

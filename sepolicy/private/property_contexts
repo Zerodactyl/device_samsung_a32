@@ -41,6 +41,9 @@ persist.sys.omc_support                 u:object_r:csc_prop:s0
 ro.simbased.changetype                  u:object_r:csc_prop:s0
 ro.csc.country_code                     u:object_r:csc_prop:s0
 
+# Display
+hdr.                                    u:object_r:sec_hdr_prop:s0
+
 # Factory
 ro.factory.factory_binary               u:object_r:exported_system_prop:s0
 
