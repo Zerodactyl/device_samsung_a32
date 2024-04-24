@@ -22,6 +22,7 @@ genfscon sysfs /devices/virtual/input/input5/name                               
 genfscon sysfs /devices/virtual/input/input10/name                                      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/virtual/input/input11/name                                      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/virtual/input/input12/name                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/virtual/input/input                                             u:object_r:sysfs_sensor:s0
 
 # Memory
 genfscon sysfs /kernel/mm/vmscan/am_app_launch                                          u:object_r:sysfs_ski_memory_writable:s0
