@@ -24,6 +24,7 @@ genfscon sysfs /devices/virtual/input/input12/name                              
 
 # Memory
 genfscon sysfs /kernel/mm/vmscan/am_app_launch                                          u:object_r:sysfs_ski_memory_writable:s0
+genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                                         u:object_r:sysfs_ski_memory_writable:s0
 
 # Power
 genfscon sysfs /power/cpufreq_min_limit                                                 u:object_r:sysfs_power:s0
