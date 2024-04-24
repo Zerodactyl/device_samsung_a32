@@ -7,6 +7,8 @@ allow snap_utility snap_data_vendor_file:dir create_dir_perms;
 allow snap_utility snap_data_vendor_file:file create_file_perms;
 allow snap_utility gpu_device:dir r_dir_perms;
 allow snap_utility gpu_device:chr_file rw_file_perms;
+allow snap_utility vendor_shell_exec:file rx_file_perms;
+allow snap_utility vendor_toolbox_exec:file rx_file_perms;
 
 set_prop(snap_utility, cache_status_prop)
 get_prop(snap_utility, system_boot_reason_prop)
