@@ -9,6 +9,7 @@ genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/brightness     
 
 # IIO
 genfscon sysfs /bus/iio/devices                                                         u:object_r:sysfs_iio_devices:s0
+genfscon sysfs /devices/platform/shub/iio:device5                                       u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device7                                       u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device12                                      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device22                                      u:object_r:sysfs_ss_writable:s0
