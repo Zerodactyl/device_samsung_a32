@@ -6,5 +6,6 @@ type vendor_tztsdaemon_prop, property_type, vendor_property_type, vendor_public_
 type vendor_radio_prop, property_type, vendor_property_type, vendor_public_property_type;
 type vendor_secureos_prop, property_type, vendor_property_type, vendor_public_property_type;
 type vendor_snap_cache_prop, property_type, vendor_property_type, vendor_public_property_type;
+type vendor_camera_prop, property_type, vendor_property_type, vendor_public_property_type;
 
 vendor_public_prop(vendor_hwc_prop)
