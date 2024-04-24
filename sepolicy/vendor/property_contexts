@@ -18,6 +18,9 @@ vendor.finger.down                      u:object_r:vendor_udfps_prop:s0
 # Key
 ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0
 
+# Members
+persist.vendor.members.                 u:object_r:vendor_members_prop:s0
+
 # Radio
 ro.vendor.multisim.                     u:object_r:vendor_radio_prop:s0
 ro.multisim.                            u:object_r:vendor_radio_prop:s0

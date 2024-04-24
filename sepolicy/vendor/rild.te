@@ -18,3 +18,8 @@ allow rild hal_telephony_hwservice:hwservice_manager { add find };
 get_prop(rild, product_ship_prop)
 get_prop(rild, vendor_radio_prop)
 get_prop(rild, csc_prop)
+get_prop(rild, sec_ims_prop)
+set_prop(rild, vendor_members_prop)
+get_prop(rild, vendor_model_suffix_prop)
+get_prop(rild, sec_timed_prop)
+set_prop(rild, exported_radio_prop)

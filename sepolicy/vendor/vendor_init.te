@@ -5,6 +5,8 @@ get_prop(vendor_init, vts_status_prop)
 get_prop(vendor_init, vendor_radio_prop)
 set_prop(vendor_init, vendor_exported_system_prop)
 set_prop(vendor_init, vendor_camera_prop)
+set_prop(vendor_init, vendor_members_prop)
+set_prop(vendor_init, exported_radio_prop)
 
 allow vendor_init cgroup:dir create_dir_perms;
 allow vendor_init cgroup:file w_file_perms;
