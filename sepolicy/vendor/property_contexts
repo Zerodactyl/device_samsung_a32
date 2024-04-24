@@ -9,6 +9,9 @@ vendor.npu.usr_drv.log_mask             u:object_r:vendor_sec_camera_prop:s0
 vendor.camera.unihal.enable             u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.wrapper.hal3TrebleMinorVersion         u:object_r:vendor_camera_prop:s0
 
+# Fingerprint
+vendor.finger.down                      u:object_r:vendor_udfps_prop:s0
+
 # Key
 ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0
 

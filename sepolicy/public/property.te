@@ -7,3 +7,4 @@ type vendor_debug_snap_prop, property_type, system_property_type, system_public_
 type csc_prop, property_type, system_property_type, system_public_property_type;
 
 vendor_restricted_prop(vendor_exported_system_prop);
+system_public_prop(vendor_udfps_prop)
