@@ -70,6 +70,9 @@ function blob_fixup {
             "$PATCHELF" --replace-needed libhidlbase.so libhidlbase-v31.so "${2}"
             "$PATCHELF" --replace-needed libutils.so libutils-v31.so "$2"
             ;;
+        vendor/bin/hw/vendor.samsung.hardware.hyper-service)
+            "$PATCHELF" --replace-needed liblog.so liblog-v31.so "${2}"
+            ;;
         vendor/lib64/libwifi-hal-mtk.so)
             "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
             ;;
