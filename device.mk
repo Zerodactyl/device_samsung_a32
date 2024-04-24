@@ -286,7 +286,6 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek \
     android.hardware.power@1.2.vendor \
     power.default \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
