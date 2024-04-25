@@ -2,7 +2,8 @@
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.camera\.provider@4\.[0-9]-service_64      u:object_r:hal_camera_default_exec:s0
 
 # cgroup
-/dev/cpuset(/.*)?                                                   u:object_r:ap_device:s0
+/dev/cpuset/cpus                                                    u:object_r:cgroup:s0
+/dev/cpuset/mems                                                    u:object_r:cgroup:s0
 /dev/stune(/.*)?                                                    u:object_r:cgroup:s0
 
 # drb

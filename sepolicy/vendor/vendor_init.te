@@ -10,5 +10,12 @@ set_prop(vendor_init, exported_radio_prop)
 
 allow vendor_init cgroup:dir create_dir_perms;
 allow vendor_init cgroup:file w_file_perms;
-allow vendor_init ap_device:dir create_dir_perms;
-allow vendor_init ap_device:file { mounton create_file_perms };
+allow vendor_init unlabeled:{
+    file
+    dir
+    lnk_file
+    sock_file
+    fifo_file
+ } { getattr relabelfrom };
+
+ allow vendor_init proc_dirty:file w_file_perms;
