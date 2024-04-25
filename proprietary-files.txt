@@ -1653,12 +1653,6 @@ vendor/lib64/meta_wifi_data.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 
-# WiFi (samsung)
-vendor/bin/vendor.samsung.hardware.security.hdcp.wifidisplay-service
-vendor/etc/init/vendor.samsung.hardware.security.hdcp.wifidisplay-default.rc
--vendor/etc/vintf/manifest/vendor.samsung.hardware.security.hdcp.wifidisplay-default.xml
-vendor/lib64/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk_platform.so
-
 # Misc
 system_ext/lib/libaed.so
 system_ext/lib/libaudiocompensationfilter.so

@@ -80,14 +80,6 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.samsung.hardware.security.hdcp.wifidisplay</name>
-        <version>2</version>
-        <interface>
-            <name>ISehHdcp</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.snap</name>
         <version>1</version>
         <interface>
