@@ -68,9 +68,6 @@
 # Power
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@2\.0-service            u:object_r:hal_power_default_exec:s0
 
-# Proca
-/(vendor|system/vendor)/bin/vendor\.samsung\.hardware\.security\.proca@2\.0-service         u:object_r:hal_proca_default_exec:s0
-
 # RIL
 /vendor/bin/secril_config_svc                                       u:object_r:vendor_secril_config_svc_exec:s0
 /data/vendor/secradio(/.*)?                                         u:object_r:vendor_radio_data_file:s0

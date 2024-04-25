@@ -1495,8 +1495,6 @@ vendor/lib64/vendor.samsung.hardware.snap-V1-ndk_platform.so
 # TEE
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
-vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
-vendor/etc/init/pa_daemon_teegris.rc
 vendor/etc/init/teegris_v4.rc
 vendor/lib/libMcClient.so
 vendor/lib/libTEECommon.so
