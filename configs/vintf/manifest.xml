@@ -541,16 +541,6 @@
         <fqname>@2.0::ISehChannel/imsd</fqname>
         <fqname>@2.0::ISehChannel/imsd2</fqname>
     </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.samsung.hardware.security.drk</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehDrk</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::ISehDrk/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.security.engmode</name>
         <transport>hwbinder</transport>

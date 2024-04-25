@@ -4,10 +4,6 @@ vendor.samsung.hardware.bluetooth::ISehBluetooth                    u:object_r:h
 # Camera
 vendor.samsung.hardware.camera.provider::ISehCameraProvider		    u:object_r:hal_camera_hwservice:s0
 
-# drk
-vendor.samsung.hardware.security.drk::ISehDrk                       u:object_r:hal_drk_hwservice:s0
-vendor.samsung.hardware.security.drk@2.0-service                    u:object_r:hal_drk_hwservice:s0
-
 # Engmode
 vendor.samsung.hardware.security.engmode::ISehEngmode               u:object_r:hal_engmode_hwservice:s0
 
