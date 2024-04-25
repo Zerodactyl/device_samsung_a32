@@ -1444,7 +1444,6 @@ vendor/bin/hw/vendor.samsung.hardware.authfw@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.security.skpm@1.0-service
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
-vendor/bin/vendor.samsung.hardware.security.wsm@1.0-service
 vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.skpm@1.0-service.rc
@@ -1453,10 +1452,8 @@ vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml
 -vendor/etc/vintf/manifest/manifest_vendor.samsung.hardware.security.widevine.keyprov@1.0-service.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
-vendor/lib/libhal.wsm.samsung.so
 vendor/lib/vendor.samsung.hardware.hqm@1.0.so
 vendor/lib64/lib_SamsungRec_07010.so
-vendor/lib64/libhal.wsm.samsung.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
 vendor/lib64/vendor.samsung.hardware.authfw@1.0.so
 vendor/lib64/vendor.samsung.hardware.hqm@1.0.so
@@ -1704,7 +1701,6 @@ vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/init.vendor.sysfw.rc
 vendor/etc/init/mtk_pkm_service.rc
-vendor/etc/init/wsm-service.rc
 vendor/etc/locale/plmn_delta_eng.bin
 vendor/etc/locale/plmn_delta_zh-rCN.bin
 vendor/etc/locale/plmn_delta_zh-rHK.bin
@@ -1754,7 +1750,6 @@ vendor/lib/libsnamrnb.so
 vendor/lib/libsnamrwb.so
 vendor/lib/libtad.so
 vendor/lib/libuuid.so
-vendor/lib/libwsmd_functions.so
 vendor/lib/unihal_cutils@2.1.so
 vendor/lib/unihal_main@2.1.so
 vendor/lib/unihal_uniplugin@1.0.so
@@ -1796,7 +1791,6 @@ vendor/lib64/libtvm_wrapper.so
 vendor/lib64/libuuid.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libvkservice.so
-vendor/lib64/libwsmd_functions.so
 vendor/lib64/unihal_cutils@2.1.so
 vendor/lib64/unihal_main@2.1.so
 vendor/lib64/unihal_uniplugin@1.0.so
