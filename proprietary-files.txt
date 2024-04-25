@@ -1441,10 +1441,8 @@ vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tflite
 
 # Samsung
 vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.security.skpm@1.0-service
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.security.skpm@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml
 -vendor/etc/vintf/manifest/manifest_vendor.samsung.hardware.security.widevine.keyprov@1.0-service.xml
@@ -1453,7 +1451,6 @@ vendor/lib/vendor.samsung.hardware.hqm@1.0.so
 vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
 vendor/lib64/vendor.samsung.hardware.hqm@1.0.so
-vendor/lib64/vendor.samsung.hardware.security.skpm@1.0.so
 vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # Sensors
@@ -1591,7 +1588,6 @@ vendor/lib/vendor.samsung.hardware.tlc.hdm@1.1-impl.so
 vendor/lib/vendor.samsung.hardware.tlc.hdm@1.1.so
 vendor/lib/vendor.samsung.hardware.tlc.payment@1.0-impl.so
 vendor/lib/vendor.samsung.hardware.tlc.payment@1.0.so
-vendor/lib64/libsec_skpmHalTlc.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libtlc_comm_iccc.so
 vendor/lib64/libtlc_direct_comm_iccc.so

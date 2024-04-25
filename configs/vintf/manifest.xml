@@ -551,16 +551,6 @@
         </interface>
         <fqname>@1.0::ISehEngmode/default</fqname>
     </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.samsung.hardware.security.skpm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehSkpm</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISehSkpm/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.security.vaultkeeper</name>
         <transport>hwbinder</transport>
