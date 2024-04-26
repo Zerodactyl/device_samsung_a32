@@ -442,14 +442,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.tlc.hdm</name>
-        <version>1.0-1</version>
-        <interface>
-            <name>ISehHdm</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.tlc.iccc</name>
         <version>1.0</version>
         <interface>
