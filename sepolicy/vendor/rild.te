@@ -8,8 +8,6 @@ allow rild drb_device:chr_file rw_file_perms;
 allow rild self:tun_socket { create relabelfrom relabelto };
 allow rild hal_audio_default:dir search;
 allow rild hal_audio_default:file { read getattr open };
-allow rild cassd:dir search;
-allow rild cassd:file { read getattr open };
 
 allow rild hal_telephony_hwservice:hwservice_manager { add find };
 
