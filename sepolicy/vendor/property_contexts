@@ -41,9 +41,5 @@ vendor.tzdaemon                         u:object_r:vendor_tzdaemon_prop:s0
 vendor.tzts_daemon                      u:object_r:vendor_tztsdaemon_prop:s0
 vendor.secureos.                        u:object_r:vendor_secureos_prop:s0
 
-# Vaultkeeper
-ro.vendor.security.vaultkeeper.         u:object_r:vendor_sec_vaultkeeper_prop:s0
-vendor.security.vaultkeeper.            u:object_r:vendor_sec_vaultkeeper_prop:s0
-
 # Wi-Fi
 vendor.wifi.dualconcurrent.interface    u:object_r:wifi_log_prop:s0

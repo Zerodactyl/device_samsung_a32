@@ -93,11 +93,6 @@
 # Thermal
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.thermal@1\.0-service              u:object_r:hal_thermal_default_exec:s0
 
-# Vaultkeeper
-/vendor/bin/vaultkeeperd                                                        u:object_r:vaultkeeperd_exec:s0
-/vendor/bin/vendor\.samsung\.hardware\.security\.vaultkeeper@2\.0-service       u:object_r:vaultkeeperd_exec:s0
-/dev/socket/vaultkeeper(/.*)?                                                   u:object_r:vaultkeeper_socket:s0
-
 # Vibrator
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.samsung     u:object_r:hal_vibrator_default_exec:s0
 

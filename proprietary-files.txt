@@ -1567,12 +1567,6 @@ vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/lib/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
-# Vaultkeeper
-vendor/bin/vaultkeeperd
-vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
-vendor/etc/init/vaultkeeper_common.rc
-vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
-
 # Vibrator
 vendor/lib/hw/vibrator.mt6768.so
 vendor/lib/libvibrator.so

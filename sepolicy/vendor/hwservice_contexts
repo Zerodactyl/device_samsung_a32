@@ -30,6 +30,3 @@ vendor.samsung.hardware.radio::ISehRadio                            u:object_r:h
 
 # Thermal
 vendor.samsung.hardware.thermal::ISehThermal                        u:object_r:hal_thermal_hwservice:s0
-
-# Vaultkeeper
-vendor.samsung.hardware.security.vaultkeeper::ISehVaultKeeper       u:object_r:hal_vaultkeeper_server_hwservice:s0
