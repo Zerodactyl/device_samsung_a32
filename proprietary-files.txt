@@ -1574,11 +1574,9 @@ vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/bin/hw/vendor.samsung.hardware.tlc.hdm@1.1-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.iccc@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.kg@1.1-service
-vendor/bin/hw/vendor.samsung.hardware.tlc.payment@1.0-service
 vendor/etc/init/vendor.samsung.hardware.tlc.hdm@1.1-service.rc
 vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.tlc.kg@1.1-service.rc
-vendor/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg@1.1-manifest.xml
@@ -1586,8 +1584,6 @@ vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/vendor.samsung.hardware.tlc.hdm@1.0.so
 vendor/lib/vendor.samsung.hardware.tlc.hdm@1.1-impl.so
 vendor/lib/vendor.samsung.hardware.tlc.hdm@1.1.so
-vendor/lib/vendor.samsung.hardware.tlc.payment@1.0-impl.so
-vendor/lib/vendor.samsung.hardware.tlc.payment@1.0.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libtlc_comm_iccc.so
 vendor/lib64/libtlc_direct_comm_iccc.so
@@ -1598,8 +1594,6 @@ vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0-impl.so
 vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so
 vendor/lib64/vendor.samsung.hardware.tlc.kg@1.0.so
 vendor/lib64/vendor.samsung.hardware.tlc.kg@1.1.so
-vendor/lib64/vendor.samsung.hardware.tlc.payment@1.0-impl.so
-vendor/lib64/vendor.samsung.hardware.tlc.payment@1.0.so
 
 # Vaultkeeper
 vendor/bin/vaultkeeperd
