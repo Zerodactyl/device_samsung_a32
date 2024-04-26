@@ -1442,17 +1442,12 @@ vendor/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite
 vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tflite
 
 # Samsung
-vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
-vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml
 -vendor/etc/vintf/manifest/manifest_vendor.samsung.hardware.security.widevine.keyprov@1.0-service.xml
--vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
-vendor/lib/vendor.samsung.hardware.hqm@1.0.so
 vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
-vendor/lib64/vendor.samsung.hardware.hqm@1.0.so
 vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # Sensors
@@ -1678,7 +1673,6 @@ vendor/etc/VideoLog_dynamic.xml
 vendor/etc/aurisys_config.xml
 vendor/etc/cgroups.json
 vendor/etc/floating_feature.xml
-vendor/etc/hqm_device.xml
 vendor/etc/mercury.json
 vendor/etc/mtu-conf.xml
 vendor/etc/pdpcnt-conf.xml
@@ -1693,7 +1687,6 @@ vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/libSEF.quram.so
 vendor/lib/libfloatingfeature.so
 vendor/lib/libformatConverter.unifunc.so
-vendor/lib/libhqm_hwparam.so
 vendor/lib/libminiui.so
 vendor/lib/libpadm.so
 vendor/lib/libpkm.so
@@ -1727,7 +1720,6 @@ vendor/lib64/libdeccfg.so
 vendor/lib64/libdsms_vendor.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libformatConverter.unifunc.so
-vendor/lib64/libhqm_hwparam.so
 vendor/lib64/libminiui.so
 vendor/lib64/libpadm.so
 vendor/lib64/libpkm.so
