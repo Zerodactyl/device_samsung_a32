@@ -15,9 +15,14 @@ genfscon sysfs /devices/platform/shub/iio:device5                               
 genfscon sysfs /devices/platform/shub/iio:device7                                       u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device10                                      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device12                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device15                                      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device17                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device19                                      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device20                                      u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/shub/iio:device22                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device25                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/shub/iio:device27                                      u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/iio:device1                u:object_r:sysfs_ss_writable:s0
 
 # Input
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/input/input7/enabled        u:object_r:sysfs_ski_touch_writable:s0
