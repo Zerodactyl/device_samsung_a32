@@ -870,20 +870,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 
-# Engineermode
-vendor/bin/emservice
-vendor/bin/vendor.samsung.hardware.security.engmode@1.0-service
-vendor/etc/init/emservice.rc
-vendor/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc
-vendor/lib/libstork_shared.so
-vendor/lib64/libengmode15.so
-vendor/lib64/libengmode2lite.so
-vendor/lib64/libengmode_client.so
-vendor/lib64/libengmode_server.so
-vendor/lib64/libengmode_tlc.so
-vendor/lib64/libstork_shared.so
-vendor/lib64/vendor.samsung.hardware.security.engmode@1.0.so
-
 # Fido
 vendor/lib/libfidoauthnr_v2.so
 vendor/lib64/libfidoauthnr_v2.so
@@ -1346,6 +1332,7 @@ vendor/lib64/libcares_naptr.so
 vendor/lib64/libccci_util.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdynamiclog.so
+vendor/lib64/libengmode_client.so
 vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/liblpcnr.so
 vendor/lib64/libmnl.so

@@ -378,14 +378,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.security.engmode</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISehEngmode</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.sysinput</name>
         <version>1.0-3</version>
         <interface>

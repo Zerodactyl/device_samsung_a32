@@ -4,9 +4,6 @@ vendor.samsung.hardware.bluetooth::ISehBluetooth                    u:object_r:h
 # Camera
 vendor.samsung.hardware.camera.provider::ISehCameraProvider		    u:object_r:hal_camera_hwservice:s0
 
-# Engmode
-vendor.samsung.hardware.security.engmode::ISehEngmode               u:object_r:hal_engmode_hwservice:s0
-
 # GNSS
 vendor.samsung.hardware.gnss::ISehGnss                              u:object_r:hal_gnss_hwservice:s0
 
