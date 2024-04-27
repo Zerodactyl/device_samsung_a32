@@ -1625,7 +1625,6 @@ vendor/etc/SetMultiCal.bin
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/VideoLog_dynamic.xml
 vendor/etc/aurisys_config.xml
-vendor/etc/cgroups.json
 vendor/etc/floating_feature.xml
 vendor/etc/mercury.json
 vendor/etc/mtu-conf.xml
