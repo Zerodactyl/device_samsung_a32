@@ -1427,7 +1427,6 @@ vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tflite
 # Samsung
 vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml
 vendor/lib64/lib_SamsungRec_07010.so
-vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
 
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
@@ -1611,7 +1610,6 @@ system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/bin/add.pb
 vendor/bin/dconfig
 vendor/bin/dexecutor
-vendor/bin/dsmsca
 vendor/bin/fsdbg_vendor
 vendor/bin/iod
 vendor/bin/meta_tst
@@ -1624,7 +1622,6 @@ vendor/bin/rt5512_calibration
 vendor/bin/storkd
 vendor/bin/test_model.json
 vendor/bin/wvkprov
-vendor/etc/init/dsmsca.rc
 vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/init.vendor.sysfw.rc
@@ -1687,7 +1684,6 @@ vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/libabfadp.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libdeccfg.so
-vendor/lib64/libdsms_vendor.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libformatConverter.unifunc.so
 vendor/lib64/libminiui.so
