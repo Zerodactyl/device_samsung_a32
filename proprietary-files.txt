@@ -1438,13 +1438,9 @@ vendor/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite
 vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tflite
 
 # Samsung
-vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
-vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml
--vendor/etc/vintf/manifest/manifest_vendor.samsung.hardware.security.widevine.keyprov@1.0-service.xml
 vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms@1.0.so
-vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
