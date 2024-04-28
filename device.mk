@@ -287,7 +287,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
      android.hardware.power-service.example \
      android.hardware.power@1.2.vendor \
-     power.default \
+     power.default
+
+PRODUCT_PACKAGES += \
+     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
      vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 PRODUCT_PACKAGES += \
