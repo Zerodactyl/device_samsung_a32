@@ -198,14 +198,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.mediatek.hardware.meta</name>
-        <version>1.0</version>
-        <interface>
-            <name>IMetaTst</name>
-            <instance>MetaATDHidlServer</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.mmagent</name>
         <version>1.0-1</version>
         <interface>

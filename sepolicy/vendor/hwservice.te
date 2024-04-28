@@ -1,2 +1,1 @@
 type hal_sec_inputdev_hwservice, hwservice_manager_type;
-type mtk_hal_meta_hwservice, hwservice_manager_type;

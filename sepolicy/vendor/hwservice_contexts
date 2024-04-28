@@ -11,9 +11,6 @@ vendor.samsung.hardware.gnss::ISehGnss                              u:object_r:h
 vendor.samsung.hardware.sysinput::ISehSysInputDev                   u:object_r:hal_sec_inputdev_hwservice:s0
 vendor.samsung.hardware.secinputdev::ISehInputDevice                u:object_r:hal_sec_inputdev_hwservice:s0
 
-# Meta
-vendor.mediatek.hardware.meta::IMetaTst                             u:object_r:mtk_hal_meta_hwservice:s0
-
 # NFC
 vendor.samsung.hardware.nfc::ISehNfc                                u:object_r:hal_nfc_hwservice:s0
 

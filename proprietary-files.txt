@@ -1209,10 +1209,6 @@ vendor/lib64/libsomxcmn.so
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 
-# Meta
-vendor/bin/meta_tst
-vendor/lib64/vendor.mediatek.hardware.meta@1.0.so
-
 # MMAGENT
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
