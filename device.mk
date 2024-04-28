@@ -285,7 +285,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-     android.hardware.power-service.example \
+     android.hardware.power-service.mediatek-libperfmgr \
      android.hardware.power@1.2.vendor \
      power.default
 
@@ -372,6 +372,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
     hardware/mediatek
 
 # Thermal
