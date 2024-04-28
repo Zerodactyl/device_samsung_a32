@@ -103,7 +103,15 @@
             <instance>default</instance>
         </interface>
     </hal>
-   <hal format="hidl" optional="true">
+    <hal format="hidl" optional="true">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <version>2.0-3</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.media.c2</name>
         <version>1.0-2</version>
         <interface>
@@ -111,7 +119,7 @@
             <instance>default</instance>
             <instance>default0</instance>
         </interface>
-   </hal>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.radio.deprecated</name>
         <version>1.0</version>
