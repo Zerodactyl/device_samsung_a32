@@ -1301,10 +1301,8 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
 vendor/etc/init/bootperf.rc
-vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libpixelflinger.so
 vendor/lib/libpower_timer.so
-vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/libpower_timer.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so

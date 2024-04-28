@@ -290,6 +290,10 @@ PRODUCT_PACKAGES += \
      power.default \
      vendor.mediatek.hardware.mtkpower@1.2.vendor
 
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
 # PowerOffAlarm
 PRODUCT_PACKAGES += \
     PowerOffAlarm
