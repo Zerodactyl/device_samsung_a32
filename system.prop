@@ -89,7 +89,6 @@ vendor.rild.libargs=-d /dev/ttyC0
 
 # SurfaceFlinger
 ro.surface_flinger.has_HDR_display=false
-debug.sf.latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
 
