@@ -103,7 +103,7 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr) {
 #endif
 
     set(TSP_CMD_PATH, "fod_enable,1,1,0");
-    set(TSP_CMD_PATH, "set_fod_rect,440,2020,640,2220");
+    set(TSP_CMD_PATH, "set_fod_rect,440,2085,640,2285");
 }
 
 BiometricsFingerprint::~BiometricsFingerprint() {

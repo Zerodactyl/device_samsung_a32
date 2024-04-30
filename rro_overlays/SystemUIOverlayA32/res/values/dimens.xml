@@ -25,6 +25,6 @@ Licensed SPDX-License-Identifier: Apache-2.0
     <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">5</item>
 
     <!-- Location on the screen of the center of the fingerprint sensor. -->
-    <dimen name="physical_fingerprint_sensor_center_screen_location_y">2140px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">2185px</dimen>
 
 </resources>
