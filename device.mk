@@ -195,8 +195,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor \
     android.hardware.light-V1-ndk_platform.vendor \
-    android.hardware.power-V2-ndk_platform.vendor \
-    android.hardware.vibrator-V2-ndk_platform.vendor
+    android.hardware.power-V2-ndk_platform.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -394,6 +393,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.samsung \
     vibrator.default
 
 # VNDK

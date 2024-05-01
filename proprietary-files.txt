@@ -1624,14 +1624,10 @@ vendor/etc/init/vaultkeeper_common.rc
 vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 
 # Vibrator
-vendor/bin/hw/vendor.samsung.hardware.vibrator-service
-vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
--vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
 vendor/lib/hw/vibrator.mt6768.so
 vendor/lib/libvibrator.so
 vendor/lib64/hw/vibrator.mt6768.so
 vendor/lib64/libvibrator.so
-vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk_platform.so
 
 # WiFi
 vendor/bin/hw/macloader
