@@ -12,6 +12,7 @@ genfscon sysfs /devices/platform/panel/panel_drv/backlight/panel/max_brightness 
 genfscon sysfs /bus/iio/devices                                                         u:object_r:sysfs_iio_devices:s0
 genfscon sysfs /devices/platform/shub/iio:device                                        u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/iio:device1                u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/11001000.auxadc/iio:device                             u:object_r:sysfs_ss_writable:s0
 
 # Input
 genfscon sysfs /devices/platform/1100d000.i2c6/i2c-6/6-0049/input/input7/enabled        u:object_r:sysfs_ski_touch_writable:s0
