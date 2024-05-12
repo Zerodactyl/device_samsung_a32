@@ -73,6 +73,8 @@
 # Snap
 /(vendor|system/vendor)/bin/snap_utility_64					        u:object_r:snap_utility_exec:s0
 /data/vendor/snap(/.*)?                                             u:object_r:snap_data_vendor_file:s0
+/vendor/saiv/image_understanding/db(/.*)?                           u:object_r:vendor_snap_file:s0
+/vendor/saiv/sr_engine_model(/.*)?                                  u:object_r:vendor_snap_file:s0
 
 # TEE
 /dev/tzdev                                                          u:object_r:tz_user_device:s0

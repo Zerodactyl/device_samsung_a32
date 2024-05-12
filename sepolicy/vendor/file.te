@@ -19,3 +19,4 @@ type snap_data_vendor_file, file_type, data_file_type;
 type pps_socket, file_type;
 type sysfs_mtk_cpufreq, fs_type, sysfs_type;
 type sysfs_mtk_gpufreq, fs_type, sysfs_type;
+type vendor_snap_file, file_type, vendor_file_type;
