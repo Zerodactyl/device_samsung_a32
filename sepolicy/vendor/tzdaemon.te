@@ -9,6 +9,7 @@ allow tzdaemon tz_user_device:chr_file rw_file_perms;
 allow tzdaemon property_socket:sock_file write;
 allow tzdaemon init:unix_stream_socket connectto;
 allow tzdaemon efs_file:dir search;
+allow tzdaemon mnt_vendor_file:dir search;
 
 get_prop(tzdaemon, product_ship_prop)
 set_prop(tzdaemon, vendor_tzdaemon_prop)
