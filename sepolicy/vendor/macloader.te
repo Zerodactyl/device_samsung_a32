@@ -17,6 +17,8 @@ allow macloader efs_file:dir search;
 allow macloader proc_net:file rw_file_perms;
 allow macloader self:udp_socket { ioctl create };
 allowxperm macloader self:udp_socket ioctl { 0x8913-0x8914 };
+allow macloader self:capability { chown fowner fsetid net_admin net_raw sys_module };
+allow macloader mnt_vendor_file:dir r_dir_perms;
 
 set_prop(macloader, vendor_mtk_wifi_hotspot_prop)
 set_prop(macloader, wifi_log_prop)
