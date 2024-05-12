@@ -12,3 +12,4 @@ type vendor_model_suffix_prop, property_type, vendor_property_type, vendor_publi
 type exported_radio_prop, property_type, system_property_type, system_public_property_type;
 
 vendor_public_prop(vendor_hwc_prop)
+vendor_restricted_prop(vendor_aware_available_prop);

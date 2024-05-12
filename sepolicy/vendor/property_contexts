@@ -1,3 +1,6 @@
+# Aware
+ro.vendor.aware_available               u:object_r:vendor_aware_available_prop:s0
+
 # Bluetooth
 vendor.bluetooth_nv_ver                 u:object_r:wifi_log_prop:s0
 vendor.bluetooth_fw_ver                 u:object_r:wifi_log_prop:s0
@@ -14,6 +17,9 @@ vendor.display.sf.                      u:object_r:vendor_display_sf_prop:s0
 
 # Fingerprint
 vendor.finger.down                      u:object_r:vendor_udfps_prop:s0
+
+# HWC
+vendor.display.vds_allow_hwc            u:object_r:vendor_hwc_prop:s0
 
 # Key
 ro.mtk_key_manager_support              u:object_r:vendor_mtk_default_prop:s0

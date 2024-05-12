@@ -47,6 +47,16 @@ hdr.                                    u:object_r:sec_hdr_prop:s0
 # Factory
 ro.factory.factory_binary               u:object_r:exported_system_prop:s0
 
+# Hardware
+ro.hardware.chipname                    u:object_r:exported_default_prop:s0
+
+# Misc
+persist.sys.sec_feature                 u:object_r:exported_system_prop:s0
+persist.sys.sec_feature2                u:object_r:exported_system_prop:s0
+persist.sys.sec_pcid                    u:object_r:exported_system_prop:s0
+persist.sys.sec_pcid2                   u:object_r:exported_system_prop:s0
+persist.sys.sf.hs_mode                  u:object_r:exported_system_prop:s0
+
 # Product
 ro.product_ship                         u:object_r:product_ship_prop:s0
 
@@ -66,5 +76,11 @@ ro.security.                            u:object_r:exported_system_prop:s0
 # Snap
 persist.debug_snap_gpu                  u:object_r:vendor_debug_snap_prop:s0
 
+# Thermal
+dev.sdhms.thermal.hv                    u:object_r:exported_system_prop:s0
+
 # Timed
 persist.timed.enable                    u:object_r:sec_timed_prop:s0
+
+# ZRAM
+persist.sys.zram.ram_expand_size        u:object_r:zram_config_prop:s0 exact int
