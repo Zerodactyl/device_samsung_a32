@@ -1,3 +1,8 @@
+vndbinder_use(hal_camera_default);
+
+binder_call(hal_camera_default, system_server);
+binder_call(system_server, hal_camera_default);
+
 allow hal_camera_default camera_isp_device:chr_file rw_file_perms;
 allow hal_camera_default kd_camera_hw_device:chr_file rw_file_perms;
 allow hal_camera_default CAM_CAL_DRV_device:chr_file rw_file_perms;
@@ -27,9 +32,16 @@ allow hal_camera_default mnt_vendor_file:dir create_dir_perms;
 allow hal_camera_default mnt_vendor_file:file create_file_perms;
 allow hal_camera_default mnt_vendor_file:fifo_file create_file_perms;
 
-binder_call(hal_camera_default, system_server)
+allow hal_camera_default hal_graphics_composer_default:fd use;
+allow hal_camera_default hal_graphics_allocator:fd use;
+allow hal_camera_default hal_graphics_allocator:binder { call transfer };
+allow hal_camera_default cameraserver:fd use;
+allow hal_camera_default cameraserver:binder { call transfer };
+allow hal_camera_default system_server:binder call;
 binder_call(hal_camera_default, hal_graphics_allocator_default)
 binder_call(hal_camera_default, mtk_hal_power)
+
+hal_client_domain(hal_camera_default, hal_graphics_allocator)
 
 allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
 allow hal_camera_default hal_camera_hwservice:hwservice_manager { add find };
