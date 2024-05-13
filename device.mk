@@ -104,7 +104,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.1.vendor \
     android.hardware.graphics.mapper@3.0.vendor \
-    android.hardware.graphics.mapper@4.0.vendor
+    android.hardware.graphics.mapper@4.0.vendor \
+    libvulkan
 
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali
