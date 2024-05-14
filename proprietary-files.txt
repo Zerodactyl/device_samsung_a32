@@ -1473,8 +1473,6 @@ vendor/lib64/libfloatingfeature.so
 vendor/lib64/libsecnativefeature.so
 
 # Sensors
-vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
-vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
 vendor/lib/librgbwlightsensor.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/sensors.grip.so

@@ -58,10 +58,6 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
-        vendor/bin/hw/android.hardware.sensors@2.0-service.multihal)
-            "$PATCHELF" --replace-needed libhidlbase.so libhidlbase-v31.so "${2}"
-            "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
-            ;;
         vendor/bin/hw/android.hardware.wifi@1.0-service-lazy)
             "$PATCHELF" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
             ;;
@@ -72,6 +68,9 @@ function blob_fixup {
             ;;
         vendor/bin/hw/vendor.samsung.hardware.hyper-service)
             "$PATCHELF" --replace-needed liblog.so liblog-v31.so "${2}"
+            ;;
+        vendor/lib*/sensors.inputvirtual.so|vendor/lib*/sensors.sensorhub.so)
+            "$PATCHELF" --replace-needed libutils.so libutils-v31.so "$2"
             ;;
         vendor/lib64/libwifi-hal-mtk.so)
             "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
