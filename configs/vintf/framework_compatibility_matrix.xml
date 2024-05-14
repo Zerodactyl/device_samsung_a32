@@ -55,14 +55,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.usb</name>
-        <version>1.0-3</version>
-        <interface>
-            <name>IUsb</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.vibrator</name>
         <version>2</version>
@@ -92,6 +84,14 @@
         <version>2</version>
         <interface>
             <name>ISupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.hyper</name>
+        <version>2</version>
+        <interface>
+            <name>ISehHyPer</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -150,6 +150,14 @@
         <version>1.0-1</version>
         <interface>
             <name>IOffloadControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.usb</name>
+        <version>1.0-3</version>
+        <interface>
+            <name>IUsb</name>
             <instance>default</instance>
         </interface>
     </hal>

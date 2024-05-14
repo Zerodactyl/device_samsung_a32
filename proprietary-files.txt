@@ -998,6 +998,7 @@ vendor/etc/hyper/config_hyper_permission.json
 vendor/etc/hyper/config_model.json
 vendor/etc/hyper/config_vendor.json
 vendor/etc/init/hyper-default-sec.rc
+-vendor/etc/vintf/manifest/hyper-default-sec.xml
 vendor/lib/libhypermotion.uniplugin@1.0.so
 vendor/lib/libhypermotion_core.so
 vendor/lib64/libhyper.so
