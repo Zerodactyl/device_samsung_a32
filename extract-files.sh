@@ -58,9 +58,6 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
-        vendor/bin/hw/android.hardware.wifi@1.0-service-lazy)
-            "$PATCHELF" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
-            ;;
         vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64)
             "$PATCHELF" --replace-needed libbinder.so libbinder-v31.so "${2}"
             "$PATCHELF" --replace-needed libhidlbase.so libhidlbase-v31.so "${2}"
