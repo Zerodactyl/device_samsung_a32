@@ -36,7 +36,6 @@ PRODUCT_PACKAGES += \
     audio_policy.stub
 
 PRODUCT_PACKAGES += \
-    libalsautils \
     libaudiopreprocessing \
     libdynproc \
     libhapticgenerator \
