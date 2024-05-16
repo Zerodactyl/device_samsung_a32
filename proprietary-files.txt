@@ -645,6 +645,7 @@ vendor/lib64/libfeatureiodrv_mem.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libheifcapture.so
 vendor/lib64/libhigh_dynamic_range_bokeh.so
+vendor/lib64/libhwscaler_camera.mtk.so
 vendor/lib64/libimagecodec_native.quram.so
 vendor/lib64/libimageio.so
 vendor/lib64/libimageio_plat_drv.so
