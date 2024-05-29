@@ -299,7 +299,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-     android.hardware.power-service.a32-libperfmgr \
+     android.hardware.power-service.lineage-libperfmgr \
      android.hardware.power@1.2.vendor \
      power.default
 
@@ -393,7 +393,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
     hardware/samsung_ext
 
 # Thermal
