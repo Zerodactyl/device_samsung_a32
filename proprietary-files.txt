@@ -936,6 +936,14 @@ vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin
 vendor/firmware/txpowerctrl.cfg
 vendor/firmware/wifi.cfg
 
+# Fingerprint
+vendor/etc/init/fingerprint_common.rc
+vendor/etc/init/init.fingerprint.rc
+vendor/lib64/libegis_fp_normal_sensor_test.so
+vendor/lib64/libgf_in_system_lib.so
+vendor/lib64/libqfp_sensortest.so
+vendor/lib64/libsynaFpSensorTestNwd.so;DISABLE_CHECKELF
+
 # Gatekeeper
 vendor/lib/hw/gatekeeper.mt6769t.so
 vendor/lib64/hw/gatekeeper.mt6769t.so
