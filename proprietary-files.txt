@@ -1,4 +1,4 @@
-# All blobs from a32xx-user 13 TP1A.220624.014 A325FXXS7DXA2 release-keys, unless pinned
+# All blobs from a32xx-user 13 TP1A.220624.014 A325FXXSCDXL2 release-keys, unless pinned
 
 # AAL
 vendor/lib/libaal_cust.so
