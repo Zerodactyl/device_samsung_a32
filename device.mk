@@ -330,9 +330,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.6.vendor 
-    
-#    secril_config_svc
+    android.hardware.radio@1.6.vendor \
+    secril_config_svc
 
 # Radio (IMS)
 PRODUCT_BOOT_JARS += \
@@ -377,11 +376,9 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp_policy,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
 # Sensors
-#PRODUCT_PACKAGES += \
-#    android.hardware.sensors-service.samsung-multihal
-
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors-service.samsung-multihal \
     android.hardware.sensors@1.0.vendor
 
 PRODUCT_COPY_FILES += \
@@ -398,7 +395,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-    hardware/samsung_ext
+    hardware/samsung
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -410,8 +407,8 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor
 
 # Vibrator
-#    android.hardware.vibrator-service.samsung \
 PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.samsung \
     vibrator.default
 
 # ViPER5AndroidFX

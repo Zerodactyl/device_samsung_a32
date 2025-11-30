@@ -1463,7 +1463,7 @@
     <!-- The default refresh rate for a given device. If a non-zero value is set for
          config_defaultPeakRefreshRate, then config_defaultRefreshRate may be set to 0, in that case
          the value set for config_defaultPeakRefreshRate will act as the default peak frame rate -->
-    <integer name="config_defaultRefreshRate">0</integer>
+    <integer name="config_defaultRefreshRate">90</integer>
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">60</integer>
