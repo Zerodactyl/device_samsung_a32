@@ -58,31 +58,35 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --board ""
 
+# Keep 4KB pages for the kernel (legacy behavior)
+TARGET_KERNEL_USE_16K_PAGES := false
+
 # Graphics
 TARGET_USES_ION := true
+BOARD_FSGEN_DISABLE := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a32
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_a32)
 TARGET_RECOVERY_DEVICE_MODULES := libinit_a32
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/samsung/a32
-TARGET_KERNEL_CONFIG := a32_defconfig
+TARGET_KERNEL_CONFIG := a32_sukisu_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r383902
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 #    /home/vigus/los21/device/samsung/a32/prebuilts/modules/fmradio_drv_mt6631.ko \
 BOARD_VENDOR_KERNEL_MODULES += \
-    /home/vigus/los21/device/samsung/a32/prebuilts/modules/fpsgo.ko \
-    /home/vigus/los21/device/samsung/a32/prebuilts/modules/gps_drv.ko \
-    /home/vigus/los21/device/samsung/a32/prebuilts/modules/met.ko \
-    /home/vigus/los21/device/samsung/a32/prebuilts/modules/udc_lib.ko \
-    /home/vigus/los21/device/samsung/a32/prebuilts/modules/connfem.ko \
-    /home/vigus/los21/device/samsung/a32/prebuilts/modules/wmt_chrdev_wifi.ko \
-    /home/vigus/los21/device/samsung/a32/prebuilts/modules/wmt_drv.ko 
+    /home/vigus/los23/device/samsung/a32/prebuilts/modules/fpsgo.ko \
+    /home/vigus/los23/device/samsung/a32/prebuilts/modules/gps_drv.ko \
+    /home/vigus/los23/device/samsung/a32/prebuilts/modules/met.ko \
+    /home/vigus/los23/device/samsung/a32/prebuilts/modules/udc_lib.ko \
+    /home/vigus/los23/device/samsung/a32/prebuilts/modules/connfem.ko \
+    /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_chrdev_wifi.ko \
+    /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_drv.ko 
 
 #BOARD_VENDOR_KERNEL_MODULES += $(wildcard $(DEVICE_PATH)-kernel/vendor-modules/*.ko)
 TARGET_KERNEL_LLVM_BINUTILS := false
@@ -99,6 +103,8 @@ BOARD_SUPER_PARTITION_SIZE := 7843348480
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system odm product vendor
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 7843344384
+
+AB_OTA_UPDATER := false
 
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -126,7 +132,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -149,7 +155,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # UDFPS
 TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.a32
+$(call soong_config_set,surfaceflinger,udfps_lib,//$(DEVICE_PATH):libudfps_extension.a32)
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

@@ -207,10 +207,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 # NDK
-PRODUCT_PACKAGES += \
-    android.hardware.common-V2-ndk_platform.vendor \
-    android.hardware.light-V1-ndk_platform.vendor \
-    android.hardware.power-V2-ndk_platform.vendor
+#PRODUCT_PACKAGES += \
+#    android.hardware.common-V2-ndk_platform.vendor \
+#    android.hardware.light-V1-ndk_platform.vendor \
+#    android.hardware.power-V2-ndk_platform.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -218,10 +218,11 @@ PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
 
 # NFC
+#NfcNci \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
     com.android.nfc_extras \
-    NfcNci \
+    com.android.nfc.services \
     SecureElement \
     Tag
 
@@ -410,6 +411,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung \
     vibrator.default
+
+
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # ViPER5AndroidFX
 # $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)

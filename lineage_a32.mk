@@ -22,9 +22,15 @@ PRODUCT_MODEL := SM-A325F
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=a32 \
-    PRODUCT_NAME=a32xx \
-    PRIVATE_BUILD_DESC="a32xx-user 13 TP1A.220624.014 A325FXXSCDXL2 release-keys"
+# Correct property overrides
+#PRODUCT_BUILD_PROP_OVERRIDES += \
+#    PRIVATE_BUILD_DESC="a32xx-user 13 TP1A.220624.014 A325FXXSCDXL2 release-keys"
 
+PRODUCT_BUILD_DESCRIPTION := a32xx-user 13 TP1A.220624.014 A325FXXSCDXL2 release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.device=a32
+
+# Correct fingerprint assignment for Lineage 23
 BUILD_FINGERPRINT := samsung/a32xx/a32:13/TP1A.220624.014/A325FXXSCDXL2:user/release-keys
+
