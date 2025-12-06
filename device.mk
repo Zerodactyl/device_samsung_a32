@@ -207,10 +207,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 # NDK
-#PRODUCT_PACKAGES += \
-#    android.hardware.common-V2-ndk_platform.vendor \
-#    android.hardware.light-V1-ndk_platform.vendor \
-#    android.hardware.power-V2-ndk_platform.vendor
+PRODUCT_PACKAGES += \
+    android.hardware.common-V2-ndk.vendor \
+    android.hardware.light-V1-ndk.vendor \
+    android.hardware.power-V2-ndk.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -218,7 +218,6 @@ PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
 
 # NFC
-#NfcNci \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
     com.android.nfc_extras \
@@ -366,6 +365,9 @@ PRODUCT_PACKAGES += \
     init.recovery.samsung.rc \
     init.target.rc \
     ueventd.mtk.rc
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.init.disable_verifier=true
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 \

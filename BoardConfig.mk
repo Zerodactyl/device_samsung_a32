@@ -88,7 +88,6 @@ BOARD_VENDOR_KERNEL_MODULES += \
     /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_chrdev_wifi.ko \
     /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_drv.ko 
 
-#BOARD_VENDOR_KERNEL_MODULES += $(wildcard $(DEVICE_PATH)-kernel/vendor-modules/*.ko)
 TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Partitions
