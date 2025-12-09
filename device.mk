@@ -29,6 +29,12 @@ PRODUCT_PACKAGES += \
     spatializer-aidl-cpp.vendor
 
 PRODUCT_PACKAGES += \
+    libbase_shim
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.audio.primary=default
+
+PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.default \
     audio.r_submix.default \
@@ -197,7 +203,8 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
     libcodec2_simple_component \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx_plugin.vendor
+    libstagefright_softomx_plugin.vendor \
+    libui_shim.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -221,8 +228,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
     com.android.nfc_extras \
-    com.android.nfc.services \
-    SecureElement \
     Tag
 
 PRODUCT_COPY_FILES += \
@@ -331,7 +336,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.radio@1.6.vendor \
-    secril_config_svc
+    secril_config_svc \
+    libjsoncpp.vendor
 
 # Radio (IMS)
 PRODUCT_BOOT_JARS += \
@@ -387,6 +393,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# GPS
+PRODUCT_PACKAGES += \
+    libexpat.vendor \
+    libcurl.vendor:64 \
+    libjsoncpp.vendor
+
+PRODUCT_PACKAGES += \
+    libcamera_metadata.vendor \
+    libpng.vendor \
+    libexif \
+    libexif.vendor
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -418,7 +436,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # ViPER5AndroidFX
-# $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # VNDK
 PRODUCT_COPY_FILES += \

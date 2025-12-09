@@ -78,15 +78,15 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r383902
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
-#    /home/vigus/los21/device/samsung/a32/prebuilts/modules/fmradio_drv_mt6631.ko \
-BOARD_VENDOR_KERNEL_MODULES += \
-    /home/vigus/los23/device/samsung/a32/prebuilts/modules/fpsgo.ko \
-    /home/vigus/los23/device/samsung/a32/prebuilts/modules/gps_drv.ko \
-    /home/vigus/los23/device/samsung/a32/prebuilts/modules/met.ko \
-    /home/vigus/los23/device/samsung/a32/prebuilts/modules/udc_lib.ko \
-    /home/vigus/los23/device/samsung/a32/prebuilts/modules/connfem.ko \
-    /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_chrdev_wifi.ko \
-    /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_drv.ko 
+#    /home/vigus/los21/device/samsung/a32/prebuilts/modules/fmradio_drv_mt6631.ko 
+#BOARD_VENDOR_KERNEL_MODULES += \
+#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/fpsgo.ko \
+#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/gps_drv.ko \
+#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/met.ko \
+#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/udc_lib.ko \
+#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/connfem.ko \
+#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_chrdev_wifi.ko \
+#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_drv.ko 
 
 TARGET_KERNEL_LLVM_BINUTILS := false
 
