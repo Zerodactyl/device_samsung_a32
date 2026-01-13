@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/a32/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/mica/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_a32
+PRODUCT_NAME := mica_a32
 PRODUCT_DEVICE := a32
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_BRAND := samsung
@@ -27,6 +27,6 @@ PRODUCT_BUILD_DESCRIPTION := a32xx-user 13 TP1A.220624.014 A325FXXSCDXL2 release
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.device=a32
 
-# Correct fingerprint assignment for Lineage 23
+# Correct fingerprint assignment for Project Mica
 BUILD_FINGERPRINT := samsung/a32xx/a32:13/TP1A.220624.014/A325FXXSCDXL2:user/release-keys
 

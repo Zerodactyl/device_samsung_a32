@@ -28,8 +28,25 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     spatializer-aidl-cpp.vendor
 
+#PRODUCT_COPY_FILES += \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/bt_drv_connac1x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bt_drv_connac1x.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/wlan_drv_gen4m.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan_drv_gen4m.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/fmradio_drv_mt6631.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fmradio_drv_mt6631.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/gps_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/met.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/met.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/udc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/udc_lib.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/connfem.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/connfem.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/wmt_chrdev_wifi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_chrdev_wifi.ko \
+#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_bufferqueue_helper.so \
+    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferqueue_helper.so
+
 PRODUCT_PACKAGES += \
-    libbase_shim
+    libbase_shim \
+    libprocessgroup_shim
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.audio.primary=default
@@ -179,7 +196,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit several Android Go Configurations (Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/boot/boot-image-profile.txt
 
 # Keymaster
 PRODUCT_PACKAGES += \

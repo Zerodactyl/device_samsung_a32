@@ -4,6 +4,11 @@
 Licensed SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <dimen name="max_window_blur_radius">25dp</dimen>
+    
+    <dimen name="scrim_blur_radius">20dp</dimen>
+    
+    <dimen name="blur_radius_unlock">20dp</dimen>
     <!-- the padding on the rouded corner content -->
     <dimen name="rounded_corner_content_padding">8dp</dimen>
 

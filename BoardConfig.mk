@@ -78,17 +78,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r383902
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
-#    /home/vigus/los21/device/samsung/a32/prebuilts/modules/fmradio_drv_mt6631.ko 
-#BOARD_VENDOR_KERNEL_MODULES += \
-#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/fpsgo.ko \
-#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/gps_drv.ko \
-#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/met.ko \
-#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/udc_lib.ko \
-#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/connfem.ko \
-#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_chrdev_wifi.ko \
-#    /home/vigus/los23/device/samsung/a32/prebuilts/modules/wmt_drv.ko 
-
 TARGET_KERNEL_LLVM_BINUTILS := false
+
+BLOCK_BASED_OTA := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -118,7 +110,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_USES_METADATA_PARTITION := true
 
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/mica/config/BoardConfigReservedSize.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
@@ -189,14 +181,14 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_HOSTAPD_DRIVER := NL80211
 WIFI_DRIVER_FW_PATH_PARAM := "/dev/wmtWifi"
-WIFI_DRIVER_FW_PATH_STA := "STA"
-WIFI_DRIVER_FW_PATH_AP := "AP"
-WIFI_DRIVER_FW_PATH_P2P := "P2P"
+WIFI_DRIVER_FW_PATH_STA := "sta"
+WIFI_DRIVER_FW_PATH_AP := "ap"
+WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wmtWifi"
 WIFI_DRIVER_STATE_ON := "1"
 WIFI_DRIVER_STATE_OFF := "0"
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
-WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := false
 
 # Inherit the proprietary files
 include vendor/samsung/a32/BoardConfigVendor.mk
