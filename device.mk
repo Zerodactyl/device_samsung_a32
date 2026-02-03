@@ -253,7 +253,15 @@ PRODUCT_COPY_FILES += \
 
 # Network tools
 PRODUCT_PACKAGES += \
-    libpcap
+    libpcap 
+
+# fix vendor/lib64/libsec-ril.so
+PRODUCT_PACKAGES += \
+    libsqlite.vendor \
+    libc.vendor \
+    libm.vendor \
+    libdl.vendor \
+    libnetutils.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -435,6 +443,12 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
     hardware/samsung
+
+# Ril fix 2?
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.use_legacy_mtk_ril=true \
+    persist.radio.legacy=true \
+    ro.radio.noril=false
 
 # Thermal
 PRODUCT_PACKAGES += \

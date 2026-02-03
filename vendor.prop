@@ -82,6 +82,7 @@ ro.vendor.widevine_wrapped_keybox_path=/mnt/vendor/efs
 # FM Radio
 persist.vendor.connsys.fm_chipid=mt6631
 ro.vendor.fm.platform=mt6631
+persist.radio.multisim.config=dsds
 
 # FS-verity
 ro.apk_verity.mode=2
@@ -209,7 +210,6 @@ persist.vendor.radio.mtk_dsbp_support=2
 persist.vendor.radio.mtk_ps2_rat=L/W/G
 persist.vendor.radio.mtk_ps3_rat=G
 persist.vendor.radio.smart.data.switch=1
-ro.radio.noril=no
 ro.telephony.default_cdma_sub=0
 ro.vendor.epdg.support=true
 ro.vendor.md_log_memdump_wait=15

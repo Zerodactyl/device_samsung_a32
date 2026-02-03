@@ -86,6 +86,7 @@ persist.vendor.pms_removable=1
 persist.vendor.vilte_support=1
 persist.vendor.vzw_device_type=0
 persist.vendor.wfc.sys_wfc_support=1
+persist.radio.multisim.config=dsds
 
 # RIL
 vendor.rild.libpath=mtk-ril.so
@@ -105,7 +106,6 @@ debug.hwui.level=high
 # Telephony
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.mtk_telephony_add_on_policy=0
-ro.telephony.sim_slots.count=2
 
 # Temporary enables NAV bar (soft keys)
 qemu.hw.mainkeys=0
