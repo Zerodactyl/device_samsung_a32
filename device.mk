@@ -26,19 +26,13 @@ PRODUCT_PACKAGES += \
     libaudioclient_aidl_conversion \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
-    spatializer-aidl-cpp.vendor
-
-#PRODUCT_COPY_FILES += \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/bt_drv_connac1x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bt_drv_connac1x.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/wlan_drv_gen4m.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan_drv_gen4m.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/fmradio_drv_mt6631.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fmradio_drv_mt6631.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/gps_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/met.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/met.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/udc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/udc_lib.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/connfem.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/connfem.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/wmt_chrdev_wifi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_chrdev_wifi.ko \
-#    /home/vigus/mica16/device/samsung/a32/prebuilts/modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko
+    spatializer-aidl-cpp.vendor \
+    libopus.vendor \
+    libstagefright_amrnb_common.vendor \
+    libstagefright_enc_common.vendor \
+    libstagefright_flacdec.vendor \
+    libvorbisidec.vendor \
+    libstagefright_flacdec.vendor
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_bufferqueue_helper.so \
@@ -50,7 +44,7 @@ PRODUCT_PACKAGES += \
     mediacodec_shim
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.audio.primary=default
+    ro.hardware.audio.primary=mtk
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -79,6 +73,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_sec.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
     $(LOCAL_PATH)/configs/audio/tms_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tms_audio_policy_configuration.xml \
