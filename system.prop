@@ -75,8 +75,8 @@ sys.ipo.disable=1
 sys.ipo.pwrdncap=2
 
 # Blur
-ro.sf.blurs_are_expensive=1
-ro.surface_flinger.supports_background_blur=1
+#ro.sf.blurs_are_expensive=1
+#ro.surface_flinger.supports_background_blur=1
 
 # Radio
 persist.radio.sib16_support=1
