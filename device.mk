@@ -26,9 +26,7 @@ PRODUCT_PACKAGES += \
     libaudioclient_aidl_conversion \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
-    spatializer-aidl-cpp.vendor \
-
- 
+    spatializer-aidl-cpp.vendor
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_bufferqueue_helper.so \
