@@ -1,0 +1,6 @@
+cc_library_shared {
+    name: "libgraphicbuffersource_shim",
+    srcs: ["libgraphicbuffersource_shim.cpp"],
+    shared_libs: ["libutils"],
+    vendor: true,
+}
