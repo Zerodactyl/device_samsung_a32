@@ -29,8 +29,6 @@ odm /odm ext4 ro wait,,avb,logical,first_stage_mount
 /dev/block/platform/bootdevice/by-name/nvdata	/mnt/vendor/nvdata	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,formattable
 /dev/block/platform/bootdevice/by-name/nvcfg	/mnt/vendor/nvcfg	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,formattable
 
-
-/dev/block/platform/bootdevice/by-name/prism /prism ext4 ro,barrier=1 nofail,avb,first_stage_mount
 /dev/block/platform/bootdevice/by-name/optics /optics ext4 ro,barrier=1 nofail,avb,first_stage_mount
 
 
@@ -112,4 +110,4 @@ odm /odm ext4 ro wait,,avb,logical,first_stage_mount
 
 /dev/block/platform/bootdevice/by-name/uh /uh emmc defaults defaults
 
-/dev/block/zram0 none swap defaults zramsize=55%,max_comp_streams=8,zram_backingdev_size=512M
+/dev/block/zram0 none swap defaults zramsize=55%,max_comp_streams=8
