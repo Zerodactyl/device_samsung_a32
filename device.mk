@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libprocessgroup_shim \
-    mediacodec_shim
+    libgraphicbuffersource_shim
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.audio.primary=mtk
