@@ -1,4 +1,4 @@
-# All blobs from a32xx-user 13 TP1A.220624.014 A325FXXSCDXL2 release-keys, unless pinned
+# All blobs from a32xx-user 13 TP1A.220624.014 A325FXXSCDYB2 release-keys, unless pinned
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -1051,7 +1051,6 @@ system/media/temperature_limit_usb.spi
 system/media/water_protection_usb.spi
 
 # Media
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/vpud
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
@@ -1374,7 +1373,7 @@ vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/libratconfig.so
 vendor/lib64/libril_sem.so
-vendor/lib64/libsec-ril.so|02cc8e3337c9cf98ad6a3611afa8d3f9a2837cc1
+vendor/lib64/libsec-ril.so|d65c1044856c95d31ee84b3308357528cd6bf58d
 vendor/lib64/libsecril-client.so|8b25b1bd39817c512a3cef5ce0c629415ddec2d7
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libsimlock.so
@@ -1597,7 +1596,6 @@ vendor/lib/libapmonitor_vendor.so
 vendor/lib/meta_wifi_data.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/meta_wifi_data.so
