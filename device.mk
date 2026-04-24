@@ -64,6 +64,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MtkInCallService
 
+PRODUCT_ENFORCE_VINTF_MANIFEST := false
+
+PERF_ANIM_OVERRIDE := true
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/a2dpsink_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dpsink_audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
@@ -164,10 +168,10 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor
+    android.hardware.gnss@1.1.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64
 
 # Health
 PRODUCT_PACKAGES += \
@@ -197,6 +201,10 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
 
+# Vendor Service Manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0.vendor:64
@@ -210,7 +218,9 @@ PRODUCT_PACKAGES += \
     libcodec2_simple_component \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_softomx_plugin.vendor \
-    libui_shim.vendor
+    libui_shim.vendor \
+    libsync.vendor \
+    libnativewindow.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -223,7 +233,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk.vendor \
     android.hardware.light-V1-ndk.vendor \
-    android.hardware.power-V2-ndk.vendor
+    android.hardware.power-V2-ndk.vendor \
+    android.hardware.power-V6-ndk.vendor \
+    android.hardware.graphics.allocator-V1-ndk.vendor \
+    android.hardware.graphics.common-V3-ndk.vendor 
 
 # Neural Networks
 PRODUCT_PACKAGES += \
