@@ -60,7 +60,6 @@ TARGET_KERNEL_USE_16K_PAGES := false
 
 # Graphics
 TARGET_USES_ION := true
-BOARD_FSGEN_DISABLE := true
 
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_a32)
