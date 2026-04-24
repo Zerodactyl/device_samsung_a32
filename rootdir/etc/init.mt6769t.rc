@@ -22,6 +22,7 @@ on early-init
     write /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_req_ddr_opp 0
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
+    start adbd
 
 on init
     write /proc/bootprof "INIT:init"
@@ -182,7 +183,6 @@ on post-fs
 
 on late-fs
     write /proc/bootprof "INIT:late-fs"
-    wait_for_prop hwservicemanager.ready "true"
     setprop init.userspace_reboot.userdata_remount.timeoutmillis 10000
     write /proc/bootprof "INIT:Mount_START --late"
     write /sys/kernel/tracing/trace_marker "B|1|Mount late"
@@ -818,9 +818,9 @@ on post-fs-data
     #VideoCodec
     chmod 0660 /dev/vcu
     chown media system /dev/vcu
-    chmod 0660 /dev/video0
+    chmod 0666 /dev/video0
     chown mediacodec system /dev/video0
-    chmod 0660 /dev/video1
+    chmod 0666 /dev/video1
     chown mediacodec system /dev/video1
     mkdir /data/vendor/vcodec 0777 media system
     mkdir /data/vendor/vcodec/log 0770 media system
@@ -1564,3 +1564,12 @@ service charger /system/bin/charger
     file /sys/fs/pstore/console-ramoops-0 r
     file /sys/fs/pstore/console-ramoops r
     file /proc/last_kmsg r
+
+# Restrict access on this node
+on property:sys.boot_completed=1
+    # Only owner can acces this node
+    chmod 440 /proc/net/unix
+
+# Restart C2 service
+on property:sys.boot_completed=1
+    restart android-hardware-media-c2-hal-1-2
