@@ -197,5 +197,9 @@ WIFI_DRIVER_STATE_OFF := "0"
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
+# Display
+BOARD_USES_DISPLAY_COLOR_INTERFACE := true
+HWC_SUPPORT_COLOR_TRANSFORM := true
+
 # Inherit the proprietary files
 include vendor/samsung/a32/BoardConfigVendor.mk
