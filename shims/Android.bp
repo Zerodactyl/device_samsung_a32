@@ -4,3 +4,9 @@ cc_library_shared {
     shared_libs: ["libutils"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libmali_shim",
+    srcs: ["mali_shim.cpp"],
+    shared_libs: ["liblog"],
+}

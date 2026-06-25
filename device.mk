@@ -28,10 +28,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     spatializer-aidl-cpp.vendor
 
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_bufferqueue_helper.so \
-    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferqueue_helper.so
-
 # Shims
 PRODUCT_PACKAGES += \
     libbase_shim \
@@ -61,8 +57,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     MtkInCallService
-
-PRODUCT_ENFORCE_VINTF_MANIFEST := false
 
 PERF_ANIM_OVERRIDE := true
 
@@ -214,16 +208,17 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor \
     libavservices_minijail \
     libavservices_minijail_vendor \
-    libcodec2_hidl@1.2.vendor \
     libcodec2_simple_component \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx_plugin.vendor \
     libui_shim.vendor \
-    libsync.vendor \
-    libnativewindow.vendor
+    libstagefright_bufferqueue_helper.vendor \
+    libstagefright_foundation.vendor \
+   # libui-v35
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -239,7 +234,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V2-ndk.vendor \
     android.hardware.power-V6-ndk.vendor \
     android.hardware.graphics.allocator-V1-ndk.vendor \
-    android.hardware.graphics.common-V3-ndk.vendor 
+    android.hardware.graphics.common-V5-ndk.vendor \
+    android.hardware.media.c2-V1-ndk.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -451,12 +447,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/samsung
 
-# Ril fix 2?
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.use_legacy_mtk_ril=true \
-    persist.radio.legacy=true \
-    ro.radio.noril=false
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
@@ -471,7 +461,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung \
     vibrator.default
 
-
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # VNDK
@@ -481,11 +470,15 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v31/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/llndk-stub/liblog.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblog-v31.so \
     prebuilts/vndk/v33/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
+    prebuilts/vndk/v34/arm64/arch-arm-armv8-a/shared/vndk-core/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2-v34.so \
+    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_bufferqueue_helper-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v31.so \
+    prebuilts/vndk/v34/arm64/arch-arm64-armv8-a/shared/vndk-core/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2-v34.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/llndk-stub/liblog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblog-v31.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so \
+    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferqueue_helper-v31.so
 
 # Wi-Fi
 PRODUCT_PACKAGES += \

@@ -1,0 +1,14 @@
+cc_prebuilt_library_shared {
+    name: "libui-v35",
+    vendor: true,
+    target: {
+        android_arm64: {
+            srcs: ["v35/lib64/libui.so"],
+        },
+        android_arm: {
+            srcs: ["v35/lib/libui.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
