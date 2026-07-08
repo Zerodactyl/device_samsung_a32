@@ -472,6 +472,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung \
     vibrator.default
 
+# Samsung Proximity Helper
+PRODUCT_PACKAGES += SamsungProximityHelper
+
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # VNDK
