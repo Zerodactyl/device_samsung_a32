@@ -281,6 +281,7 @@ debug.sf.high_fps_early_phase_offset_ns=-12666667
 debug.sf.high_fps_late_app_phase_offset_ns=-8000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-12666667
 ro.surface_flinger.vsync_event_phase_offset_ns=8400000
+ro.surface_flinger.uclamp.min=328
 
 # TEE
 ro.vendor.mtk_tee_gp_support=1
