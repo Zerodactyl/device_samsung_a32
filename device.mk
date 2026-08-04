@@ -374,8 +374,18 @@ PRODUCT_BOOT_JARS += \
     mediatek-framework \
     mediatek-ims-base
 
+# VoLTE
+PRODUCT_PACKAGES += \
+    Iwlan \
+    QualifiedNetworksService \
+    PhhIms
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.allow_ims_off=1
+
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-me.phh.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-me.phh.ims.xml
 
 # RenderScript
 PRODUCT_PACKAGES += \

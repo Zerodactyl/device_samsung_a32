@@ -1411,6 +1411,10 @@
          phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
 
+    <string name="config_wlan_data_service_package">com.google.android.iwlan</string>
+    <string name="config_wlan_network_service_package">com.google.android.iwlan</string>
+    <string name="config_qualified_networks_service_package">com.android.telephony.qns</string>
+
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
