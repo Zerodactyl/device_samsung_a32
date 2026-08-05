@@ -33,7 +33,7 @@ vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/aurisys_config.xml
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
-vendor/lib/hw/audio.primary.mt6768.so
+vendor/lib/hw/audio.primary.mt6768.so|ae09bcd87161f520a40772b38b09ccd2c948deaa
 vendor/lib/hw/audio.sec_primary.default.so
 vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib/libMtkSpeechEnh.so
@@ -65,7 +65,7 @@ vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
-vendor/lib64/hw/audio.primary.mt6768.so
+vendor/lib64/hw/audio.primary.mt6768.so|188f4eca87aa83b680b0d9dc4ed161d79713ad04
 vendor/lib64/hw/audio.r_submix.mt6768.so
 vendor/lib64/hw/audio.sec_primary.default.so
 vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
@@ -1259,7 +1259,7 @@ vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib/libconnfem.so
 vendor/lib/libcustom_nvram.so
 vendor/lib/libfile_op.so
-vendor/lib/libnvram.so
+vendor/lib/libnvram.so|ff5c4e98210a5d16a2c0d0946eaf4ed6c0d51c67
 vendor/lib/libnvram_sec.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.1.so
@@ -1267,7 +1267,7 @@ vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/libconnfem.so
 vendor/lib64/libcustom_nvram.so
 vendor/lib64/libfile_op.so
-vendor/lib64/libnvram.so
+vendor/lib64/libnvram.so|2b0b6f1f3f2d30bf960dfe93d4df935b9621ba97
 vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
