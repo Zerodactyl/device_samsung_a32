@@ -8,6 +8,7 @@
         "target_path": "kernel/samsung/a32"
     },
     {
-	"repository": "krazey/ims"
-	"target_path": "package/apps/ims"
+	"remote": "circle"
+	"repository": "packages_apps_PhhIms"
+	"target_path": "packages/apps/PhhIms"
 ]
