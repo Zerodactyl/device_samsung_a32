@@ -330,16 +330,17 @@ PRODUCT_COPY_FILES += \
 TARGET_TAP_TO_WAKE_NODE := /sys/touchpanel/double_tap
 $(call soong_config_set,mediatek_power,double_tap_to_wake_node,$(TARGET_TAP_TO_WAKE_NODE))
 
+# Touch features
 PRODUCT_PACKAGES += \
-     android.hardware.power-service.lineage-libperfmgr \
-     android.hardware.power@1.2.vendor \
-     power.default
+    vendor.lineage.touch-service.samsung
 
+#Power-perf
 PRODUCT_PACKAGES += \
-     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-     vendor.mediatek.hardware.mtkpower@1.2.vendor
-
-PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
+    android.hardware.power@1.2.vendor \
+    power.default \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor \
     libmtkperf_client_vendor \
     libmtkperf_client
 
