@@ -8,8 +8,8 @@
         "target_path": "kernel/samsung/a32"
     },
     {
-	    "remote": "circle"
-	    "repository": "packages_apps_PhhIms"
+	    "remote": "circle",
+	    "repository": "packages_apps_PhhIms",
 	    "target_path": "packages/apps/PhhIms"
     }
 ]
