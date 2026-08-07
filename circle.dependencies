@@ -1,5 +1,13 @@
-{
-  "repository": "krazey/ims",
-  "target_path": "packages/apps/PhhIms",
-  "branch": "main"
-} 
+[
+    {
+        "repository": "tuongnguyn/vendor_samsung_a32",
+        "target_path": "vendor/samsung/a32"
+    },
+    {
+        "repository": "tuongnguyn/kernel_samsung_a32",
+        "target_path": "kernel/samsung/a32"
+    },
+    {
+	"repository": "krazey/ims"
+	"target_path": "package/apps/ims"
+]
