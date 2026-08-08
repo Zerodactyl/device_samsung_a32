@@ -306,13 +306,13 @@
   "Actions": [
     {
       "PowerHint": "DISPLAY_CHANGE",
-      "Node": "CPULittleClusterMinFreq",
+      "Node": "CPUEfficiencyClusterMinFreq",
       "Duration": 1250,
       "Value": "1800000"
     },
     {
       "PowerHint": "DISPLAY_CHANGE",
-      "Node": "CPUBigClusterMinFreq",
+      "Node": "CPUSuperClusterMinFreq",
       "Duration": 1250,
       "Value": "1850000"
     },
