@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.1.vendor \
     libvulkan
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay-service.samsung-qcom
+
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek
 
