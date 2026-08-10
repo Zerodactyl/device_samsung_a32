@@ -97,10 +97,12 @@ ro.surface_flinger.set_idle_timer_ms=-1
 ro.surface_flinger.set_touch_timer_ms=-1
 ro.surface_flinger.set_display_power_timer_ms=-1
 ro.surface_flinger.has_HDR_display=false
-debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
 ro.config.low_ram=false
 debug.hwui.level=high
+
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
 
 # Telephony
 ro.telephony.iwlan_operation_mode=legacy
