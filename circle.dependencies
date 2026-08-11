@@ -1,10 +1,10 @@
 [
     {
-        "repository": "tuongnguyn/vendor_samsung_a32",
+        "repository": "stardustps/vendor_samsung_a32",
         "target_path": "vendor/samsung/a32"
     },
     {
-        "repository": "tuongnguyn/kernel_samsung_a32",
+        "repository": "stardustps/kernel_samsung_a32-aosp",
         "target_path": "kernel/samsung/a32"
     },
     {
