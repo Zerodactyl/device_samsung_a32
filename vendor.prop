@@ -299,3 +299,9 @@ ro.vendor.mtk_wfd_support=1
 ro.vendor.wfd.dummy.enable=0
 ro.vendor.wfd.iframesize.level=0
 vendor.connsys.driver.ready=no
+
+# Fingerprint
+ro.vendor.fingerprint.type=udfps_optical
+ro.vendor.fingerprint.sensor_location=540|2185|100
+ro.vendor.fingerprint.force_calibrate=true
+ro.vendor.fingerprint.request_touch_event=true

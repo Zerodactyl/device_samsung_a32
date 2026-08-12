@@ -19,4 +19,13 @@ Licensed SPDX-License-Identifier: Apache-2.0
     <!-- Color of the FOD view -->
     <color name="config_udfpsColor">#ffffffff</color>
 
+    <!-- Whether to enable framework dimming for UDFPS -->
+    <bool name="config_udfpsFrameworkDimming">true</bool>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfpsHbmType">0</integer>
+    
 </resources>
