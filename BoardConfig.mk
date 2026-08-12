@@ -149,7 +149,10 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # UDFPS
 TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
-$(call soong_config_set,surfaceflinger,udfps_lib,//$(DEVICE_PATH):libudfps_extension.a32)
+$(call soong_config_set,surfaceflinger,udfps_lib,//hardware/samsung/fingerprint:libudfps_extension.samsung)
+
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x20002000ULL
+$(call soong_config_set,samsungUdfpsVars,udfps_zorder,0x2000U)
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
