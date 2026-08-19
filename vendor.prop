@@ -305,3 +305,5 @@ ro.vendor.fingerprint.type=udfps_optical
 ro.vendor.fingerprint.sensor_location=540|2185|100
 ro.vendor.fingerprint.force_calibrate=true
 ro.vendor.fingerprint.request_touch_event=true
+ro.vendor.fingerprint.rectangular_sensor_location=440,2085,640,2285
+ro.vendor.fingerprint.cancel_on_enroll_completion=true
