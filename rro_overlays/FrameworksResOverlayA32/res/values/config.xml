@@ -89,6 +89,64 @@
     <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">8000</integer>
 
+    <!-- Control whether Night display is available. This should only be enabled on devices
+         that have a HWC implementation that can apply the matrix passed to setColorTransform
+         without impacting power, performance, and app compatibility (e.g. protected content). -->
+    <bool name="config_nightDisplayAvailable">true</bool>
+
+    <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
+         device from the display on/off state.
+
+         When false, autosuspend_disable() will be called before the display is turned on
+         and autosuspend_enable() will be called after the display is turned off.
+         This mode provides best compatibility for devices using legacy power management
+         features such as early suspend / late resume.
+
+         When true, autosuspend_display() and autosuspend_enable() will be called
+         independently of whether the display is being turned on or off.  This mode
+         enables the power manager to suspend the application processor while the
+         display is on.
+
+         This resource should be set to "true" when a doze component has been specified
+         to maximize power savings but not all devices support it.
+
+         Refer to autosuspend.h for details.
+    -->
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">false</bool>
+
+    <!-- Power Management: Specifies whether to decouple the interactive state of the
+         device from the display on/off state.
+
+         When false, setInteractive(..., true) will be called before the display is turned on
+         and setInteractive(..., false) will be called after the display is turned off.
+         This mode provides best compatibility for devices that expect the interactive
+         state to be tied to the display state.
+
+         When true, setInteractive(...) will be called independently of whether the display
+         is being turned on or off.  This mode enables the power manager to reduce
+         clocks and disable the touch controller while the display is on.
+
+         This resource should be set to "true" when a doze component has been specified
+         to maximize power savings but not all devices support it.
+
+         Refer to power.h for details.
+    -->
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
+    <string-array name="configs_base">
+        <!-- ART heap compaction for cached apps -->
+        <item>activity_manager/use_compaction=true</item>
+    </string-array>
+
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">300%</fraction>
@@ -1457,19 +1515,9 @@
          the value set for config_defaultPeakRefreshRate will act as the default peak frame rate -->
     <integer name="config_defaultRefreshRate">90</integer>
     <integer name="config_minRefreshRate">60</integer>
-    <bool name="config_enableDynamicRefreshRate">true</bool>
-    <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
-    <!--<integer name="config_keyguardMaxRefreshRate">90</integer>-->
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>
-
-    <!-- The default value for transition animation scale found in developer settings.
-        1.0 corresponds to 1x animator scale, 0 means that there will be no transition
-        animations. Note that this is only a default and will be overridden by a
-        user-set value if toggled by settings so the "Transition animation scale" setting
-        should also be hidden if intended to be permanent. -->
-    <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.5</item>
+    <bool name="config_zramWriteback">false</bool>
 
     <string-array name="config_locationExtraPackageNames" translatable="false">
         <!-- ImsService -->
