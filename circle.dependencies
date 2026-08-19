@@ -1,10 +1,10 @@
 [
     {
-        "repository": "stardustps/vendor_samsung_a32",
+        "repository": "CiRCLING-Devices/vendor_samsung_a32",
         "target_path": "vendor/samsung/a32"
     },
     {
-        "repository": "stardustps/kernel_samsung_a32-aosp",
+        "repository": "CiRCLING-Devices/kernel_samsung_a32",
         "target_path": "kernel/samsung/a32"
     },
     {
