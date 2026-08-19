@@ -219,7 +219,7 @@ ndk::ScopedAStatus Session::onPointerDown(int32_t /*pointerId*/, int32_t /*x*/, 
     std::string sensorTypeProp = FingerprintHalProperties::type().value_or("");
     if (sensorTypeProp == "udfps_optical") {
         mBrightnessRestore = std::make_unique<TimedRestore>("/sys/class/backlight/panel/brightness");
-        mBrightnessRestore->set(486);
+        mBrightnessRestore->set(331);
     }
 
     if (FingerprintHalProperties::request_touch_event().value_or(false)) {
