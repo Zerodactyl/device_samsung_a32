@@ -120,9 +120,14 @@ on fs
     write /proc/bootprof "INIT:Mount_START"
     write /sys/kernel/tracing/trace_marker "B|1|Mount"
     mount_all /vendor/etc/fstab.mt6768 --early
+    
     # We need to seperate mounting sec_efs partition from fstab file due to GSI image loading case
     wait /dev/block/platform/bootdevice/by-name/sec_efs
     mount ext4 /dev/block/platform/bootdevice/by-name/sec_efs /efs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
+    chown system system /efs
+    chmod 0771 /efs
+    restorecon_recursive /efs
+
     wait /dev/block/platform/bootdevice/by-name/spu
     mount ext4 /dev/block/platform/bootdevice/by-name/spu /spu nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
     write /sys/kernel/tracing/trace_marker "E"
