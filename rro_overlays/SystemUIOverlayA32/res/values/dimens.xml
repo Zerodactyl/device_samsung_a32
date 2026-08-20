@@ -35,5 +35,5 @@ Licensed SPDX-License-Identifier: Apache-2.0
     <item name="pixel_pitch" format="float" type="dimen">61.8</item>
 
     <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom">4dp</dimen>
+    <dimen name="keyguard_indication_margin_bottom">12dp</dimen>
 </resources>
