@@ -215,7 +215,7 @@ PRODUCT_PACKAGES += \
     libstagefright_bufferqueue_helper.vendor \
     libstagefright_foundation.vendor \
     libutils-v31
-   # libui-v35
+   # libui-v33
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -480,13 +480,15 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v31/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/llndk-stub/liblog.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblog-v31.so \
     prebuilts/vndk/v33/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v34/arm64/arch-arm-armv8-a/shared/vndk-core/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2-v34.so \
+    prebuilts/vndk/v33/arm64/arch-arm-armv8-a/shared/vndk-core/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2-v33.so \
     prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_bufferqueue_helper-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v31.so \
-    prebuilts/vndk/v34/arm64/arch-arm64-armv8-a/shared/vndk-core/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2-v34.so \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2-v33.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/llndk-stub/liblog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblog-v31.so \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libui-v33.so \
+    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui-v33.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_bufferqueue_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferqueue_helper-v31.so
 
 # Wi-Fi

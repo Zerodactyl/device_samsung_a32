@@ -79,7 +79,7 @@ blob_fixups: blob_fixups_user_type = {
      (
         'vendor/lib/libcodec2_vndk.so',
         'vendor/lib64/libcodec2_vndk.so'): blob_fixup()
-        .replace_needed('libui.so', 'libui-v35.so'),
+        .replace_needed('libui.so', 'libui-v33.so'),
 
      'vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64': blob_fixup()
         .add_needed('libprocessgroup_shim.so')
@@ -91,7 +91,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib/librt_extamp_intf.so',
         'vendor/lib64/hw/audio.primary.mt6768.so',
         'vendor/lib64/librt_extamp_intf.so',): blob_fixup()
-        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v33.so'),
 
      'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
         .regex_replace('/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek', '/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b'),
