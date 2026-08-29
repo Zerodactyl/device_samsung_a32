@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/circle_a32.mk
+    $(LOCAL_DIR)/lineage_a32.mk
 
 COMMON_LUNCH_CHOICES := \
-    circle_a32-user \
-    circle_a32-userdebug \
-    circle_a32-eng
+    lineage_a32-user \
+    lineage_a32-userdebug \
+    lineage_a32-eng

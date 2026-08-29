@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/samsung/a32/device.mk)
 
-# Inherit some common CiRCLE stuff.
-$(call inherit-product, vendor/circle/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := circle_a32
+PRODUCT_NAME := lineage_a32
 PRODUCT_DEVICE := a32
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_BRAND := samsung
