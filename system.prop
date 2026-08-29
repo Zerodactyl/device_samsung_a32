@@ -129,3 +129,8 @@ wifi.tethering.interface=ap0
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
+
+# Performance & battery tuning (Android 13 / LineageOS 20)
+# Cap cached background processes: lowers low-memory-killer pressure and trims background
+# CPU/wakeups on 4 GB RAM -> smoother foreground apps and longer idle/standby battery.
+ro.sys.fw.bg_apps_limit=32
