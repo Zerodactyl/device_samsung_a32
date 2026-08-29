@@ -275,6 +275,8 @@ debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_gl_backpressure=0
 debug.sf.disable_backpressure=1
 debug.sf.auto_latch_unsignaled=0
+# Use dual-filter Kawase2 blur algorithm to cut GPU memory bandwidth (LineageOS 20+ renderengine)
+debug.renderengine.blur_algorithm=kawase2
 debug.sf.high_fps_early_gl_phase_offset_ns=-12666667
 debug.sf.high_fps_early_phase_offset_ns=-12666667
 debug.sf.high_fps_late_app_phase_offset_ns=-8000000
